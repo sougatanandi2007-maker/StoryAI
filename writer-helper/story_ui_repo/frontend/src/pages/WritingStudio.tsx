@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useStory } from '../context/StoryContext';
 import { api } from '../services/api';
-import { Chapter, Memory, Character, PlotHole } from '../types';
+import { Chapter, Memory, Character, PlotHole, Page } from '../types';
 import { Stamp } from '../components/common/Stamp';
 import { sound } from '../services/audioService';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -23,8 +23,18 @@ import {
   Minimize2,
   FileText,
   Clock,
-  ArrowRight
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
+  BookOpen
 } from 'lucide-react';
+import { RichTextToolbar } from '../components/studio/RichTextToolbar';
+import { parseContentToPages, combinePagesToContent } from '../utils/pagination';
+
+const stripHtml = (html: string): string => {
+  if (!html) return '';
+  return html.replace(/<[^>]*>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+};
 
 export const WritingStudio: React.FC = () => {
   const { activeStory, activeChapterId, setActiveChapterId, addToast } = useStory();
@@ -33,7 +43,6 @@ export const WritingStudio: React.FC = () => {
   const [selectedChapter, setSelectedChapter] = useState<Chapter | null>(null);
   const [characters, setCharacters] = useState<Character[]>([]);
   const [loading, setLoading] = useState(false);
-  const [isSyncingChars, setIsSyncingChars] = useState(false);
 
   // Editor State
   const [title, setTitle] = useState('');
@@ -63,7 +72,78 @@ export const WritingStudio: React.FC = () => {
   // Consistency alerts for this chapter
   const [chapterAlerts, setChapterAlerts] = useState<PlotHole[]>([]);
 
-  const autosaveTimerRef = useRef<any>(null);
+  // Multi-Page Virtual Document System
+  const [pages, setPages] = useState<Page[]>([]);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [pageDirection, setPageDirection] = useState<number>(1);
+  const [isPageOverCapacity, setIsPageOverCapacity] = useState<boolean>(false);
+  const isTypingRef = useRef<boolean>(false);
+
+  // Dedicated refs for page content cache, race-condition version tracking, and debounce timers
+  const pageContentCacheRef = useRef<{ [pageId: string]: string }>({});
+  const pageVersionRef = useRef<{ [pageId: string]: number }>({});
+  const autosaveTimersRef = useRef<{ [pageId: string]: any }>({});
+  const currentPageRef = useRef<number>(1);
+  currentPageRef.current = currentPage;
+  const pagesRef = useRef<Page[]>(pages);
+  pagesRef.current = pages;
+
+  const editorRef = useRef<HTMLDivElement | null>(null);
+
+  const createDefaultPage = (chapterId: string, pageNumber: number, initialContent = '<p><br></p>'): Page => ({
+    id: `page_${chapterId}_${pageNumber}`,
+    chapter_id: chapterId,
+    page_number: pageNumber,
+    content: initialContent,
+    word_count: stripHtml(initialContent).split(/\s+/).filter(Boolean).length,
+    save_status: 'saved',
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString()
+  });
+
+  const loadChapterPages = async (chap: Chapter) => {
+    let chapterPages: Page[] = [];
+    try {
+      const fetched = await api.getChapterPages(chap.id);
+      if (fetched && fetched.length > 0) {
+        chapterPages = fetched;
+      }
+    } catch {
+      // Fallback
+    }
+
+    if (chapterPages.length === 0) {
+      if (chap.pages && chap.pages.length > 0) {
+        chapterPages = chap.pages;
+      } else {
+        const raw = chap.content || '';
+        const stringPages = parseContentToPages(raw);
+        chapterPages = stringPages.map((str, idx) => ({
+          id: `page_${chap.id}_${idx + 1}`,
+          chapter_id: chap.id,
+          page_number: idx + 1,
+          content: str || '<p><br></p>',
+          word_count: stripHtml(str).split(/\s+/).filter(Boolean).length,
+          save_status: 'saved',
+          created_at: chap.created_at || new Date().toISOString(),
+          updated_at: chap.updated_at || new Date().toISOString(),
+        }));
+      }
+    }
+
+    if (chapterPages.length === 0) {
+      chapterPages = [createDefaultPage(chap.id, 1, chap.content || '<p><br></p>')];
+    }
+
+    chapterPages.forEach(p => {
+      pageContentCacheRef.current[p.id] = p.content;
+    });
+
+    setPages(chapterPages);
+    setCurrentPage(1);
+    setPageDirection(1);
+    setIsPageOverCapacity(false);
+  };
 
   // Fetch chapters and characters
   const fetchStudioData = async () => {
@@ -99,33 +179,12 @@ export const WritingStudio: React.FC = () => {
     }
   };
 
-  const handleSyncCharacters = async () => {
-    if (!activeStory) return;
-    try {
-      setIsSyncingChars(true);
-      sound.playTypewriterKeystroke();
-      const res = await api.syncStoryCharacters(activeStory.id);
-      const updated = await api.getStoryCharacters(activeStory.id);
-      setCharacters(updated);
-      addToast(
-        "Characters Synchronized", 
-        res.synced_count > 0 
-          ? `${res.synced_count} character(s) detected and registered.` 
-          : "Manuscript scanned. All characters are up to date.", 
-        "success"
-      );
-    } catch (e: any) {
-      addToast("Sync Failed", e.message || "Could not sync characters.", "error");
-    } finally {
-      setIsSyncingChars(false);
-    }
-  };
-
   useEffect(() => {
     fetchStudioData();
   }, [activeStory]);
 
-  const selectChapter = (chap: Chapter) => {
+  const selectChapter = async (chap: Chapter) => {
+    flushCurrentPage();
     sound.playPaperRustle();
     setSelectedChapter(chap);
     setActiveChapterId(chap.id);
@@ -134,7 +193,9 @@ export const WritingStudio: React.FC = () => {
     setSummary(chap.summary || '');
     setStatus(chap.status);
     setLastSaved('Saved');
-    queryContextMemories(chap.content);
+    queryContextMemories(stripHtml(chap.content));
+
+    await loadChapterPages(chap);
   };
 
   // Semantic Memory Retrieval query from current content
@@ -152,36 +213,279 @@ export const WritingStudio: React.FC = () => {
     }
   };
 
-  // Debounced Autosave
-  const handleContentChange = (newContent: string) => {
-    setContent(newContent);
-    setLastSaved('Unsaved Changes...');
+  // Save specific page to API/store with version race-condition guard
+  const saveSpecificPage = async (pageId: string, contentToSave: string, version: number) => {
+    if (!selectedChapter) return;
+    setIsSaving(true);
+    setPages(prev => prev.map(p => p.id === pageId ? { ...p, save_status: 'saving' } : p));
 
-    if (autosaveTimerRef.current) {
-      clearTimeout(autosaveTimerRef.current);
+    try {
+      const words = stripHtml(contentToSave).split(/\s+/).filter(Boolean).length;
+      const updatedPage = await api.updateChapterPage(selectedChapter.id, pageId, {
+        content: contentToSave,
+        word_count: words,
+        save_status: 'saved',
+      });
+
+      // Stale response guard (Test 6): Never overwrite newer user edits with an older response
+      if (version < (pageVersionRef.current[pageId] || 0)) {
+        return;
+      }
+
+      setPages(prev => prev.map(p => p.id === pageId ? { ...p, ...updatedPage, save_status: 'saved' } : p));
+      setLastSaved(`Saved at ${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`);
+    } catch (e: any) {
+      console.error("Save page error:", e);
+      setPages(prev => prev.map(p => p.id === pageId ? { ...p, save_status: 'error' } : p));
+      setLastSaved('Save Error');
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  // Synchronous flush of current page content before navigation or save
+  const flushCurrentPage = () => {
+    const activePage = pagesRef.current[currentPageRef.current - 1];
+    if (!activePage) return;
+
+    let currentHtml = editorRef.current && editorRef.current.isConnected
+      ? editorRef.current.innerHTML
+      : pageContentCacheRef.current[activePage.id];
+
+    if (!currentHtml && activePage.content) {
+      currentHtml = activePage.content;
     }
 
-    autosaveTimerRef.current = setTimeout(() => {
-      handleSave(newContent, title, summary, status, false);
-      queryContextMemories(newContent);
-    }, 2500);
+    if (!currentHtml) {
+      currentHtml = '<p><br></p>';
+    }
+
+    // Protection: Never overwrite existing manuscript content with an empty string during transition/unmount
+    if ((currentHtml === '' || currentHtml === '<p><br></p>') && (activePage.content && activePage.content.trim() !== '' && activePage.content !== '<p><br></p>')) {
+      currentHtml = activePage.content;
+    }
+
+    if (autosaveTimersRef.current[activePage.id]) {
+      clearTimeout(autosaveTimersRef.current[activePage.id]);
+      delete autosaveTimersRef.current[activePage.id];
+    }
+
+    pageContentCacheRef.current[activePage.id] = currentHtml;
+    pageVersionRef.current[activePage.id] = (pageVersionRef.current[activePage.id] || 0) + 1;
+    const version = pageVersionRef.current[activePage.id];
+    const words = stripHtml(currentHtml).split(/\s+/).filter(Boolean).length;
+
+    setPages(prev => {
+      const next = [...prev];
+      const idx = currentPageRef.current - 1;
+      if (next[idx]) {
+        next[idx] = {
+          ...next[idx],
+          content: currentHtml,
+          word_count: words,
+          updated_at: new Date().toISOString()
+        };
+      }
+      return next;
+    });
+
+    saveSpecificPage(activePage.id, currentHtml, version);
+  };
+
+  // Page input handler for ContentEditable
+  const handlePageInput = () => {
+    if (!editorRef.current || !editorRef.current.isConnected) return;
+    const activePage = pagesRef.current[currentPageRef.current - 1];
+    if (!activePage) return;
+
+    isTypingRef.current = true;
+    const currentHtml = editorRef.current.innerHTML;
+
+    // Check capacity (450px threshold)
+    const isOver = editorRef.current.scrollHeight > 450;
+    setIsPageOverCapacity(isOver);
+
+    // Update memory cache and version
+    pageContentCacheRef.current[activePage.id] = currentHtml;
+    pageVersionRef.current[activePage.id] = (pageVersionRef.current[activePage.id] || 0) + 1;
+    const version = pageVersionRef.current[activePage.id];
+
+    const words = stripHtml(currentHtml).split(/\s+/).filter(Boolean).length;
+
+    setPages(prev => {
+      const next = [...prev];
+      const idx = currentPageRef.current - 1;
+      if (next[idx]) {
+        next[idx] = {
+          ...next[idx],
+          content: currentHtml,
+          word_count: words,
+          save_status: 'unsaved',
+          updated_at: new Date().toISOString()
+        };
+      }
+      return next;
+    });
+
+    setLastSaved('Unsaved Changes...');
+
+    // Debounced autosave
+    if (autosaveTimersRef.current[activePage.id]) {
+      clearTimeout(autosaveTimersRef.current[activePage.id]);
+    }
+
+    const pageIdToSave = activePage.id;
+    autosaveTimersRef.current[activePage.id] = setTimeout(() => {
+      saveSpecificPage(pageIdToSave, currentHtml, version);
+      queryContextMemories(stripHtml(currentHtml));
+    }, 1500);
+
+    setTimeout(() => {
+      isTypingRef.current = false;
+    }, 100);
+  };
+
+  const handlePageBlur = () => {
+    if (!editorRef.current || !editorRef.current.isConnected) return;
+    const currentHtml = editorRef.current.innerHTML;
+    const activePage = pagesRef.current[currentPageRef.current - 1];
+    if (!activePage) return;
+
+    if ((!currentHtml || currentHtml.trim() === '' || currentHtml === '<p><br></p>') && (activePage.content && activePage.content.trim() !== '' && activePage.content !== '<p><br></p>')) {
+      return;
+    }
+
+    pageContentCacheRef.current[activePage.id] = currentHtml;
+    flushCurrentPage();
+  };
+
+  // Page Navigation Handlers
+  const handleNextPage = () => {
+    flushCurrentPage();
+    if (currentPage < pages.length) {
+      sound.playPaperRustle();
+      setPageDirection(1);
+      setCurrentPage(prev => prev + 1);
+    } else if (currentPage === pages.length && isPageOverCapacity) {
+      handleAddNewPage();
+    }
+  };
+
+  const handlePrevPage = () => {
+    flushCurrentPage();
+    if (currentPage > 1) {
+      sound.playPaperRustle();
+      setPageDirection(-1);
+      setCurrentPage(prev => prev - 1);
+    }
+  };
+
+  const handleJumpToPage = (pageNum: number) => {
+    if (pageNum === currentPage || pageNum < 1 || pageNum > pages.length) return;
+    flushCurrentPage();
+    sound.playPaperRustle();
+    setPageDirection(pageNum > currentPage ? 1 : -1);
+    setCurrentPage(pageNum);
+  };
+
+  const handleAddNewPage = async () => {
+    flushCurrentPage();
+    sound.playPaperRustle();
+
+    if (!selectedChapter) return;
+    const nextNum = pages.length + 1;
+    try {
+      const created = await api.createChapterPage(selectedChapter.id, {
+        page_number: nextNum,
+        content: '<p><br></p>',
+      });
+      pageContentCacheRef.current[created.id] = created.content;
+      setPages(prev => [...prev, created]);
+      setPageDirection(1);
+      setCurrentPage(nextNum);
+      addToast("New Folio Bound", `Folio ${nextNum} added to the manuscript.`, "info");
+    } catch {
+      const fallback = createDefaultPage(selectedChapter.id, nextNum, '<p><br></p>');
+      pageContentCacheRef.current[fallback.id] = fallback.content;
+      setPages(prev => [...prev, fallback]);
+      setPageDirection(1);
+      setCurrentPage(nextNum);
+      addToast("New Folio Bound", `Folio ${nextNum} added to the manuscript.`, "info");
+    }
+  };
+
+  const handleEditorKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.ctrlKey || e.metaKey) {
+      if (e.key === 'Enter') {
+        // Ctrl+Enter: Insert Page Break
+        e.preventDefault();
+        handleAddNewPage();
+        return;
+      }
+      if (e.key === 'b' || e.key === 'B') {
+        e.preventDefault();
+        document.execCommand('bold', false);
+        handlePageInput();
+      } else if (e.key === 'i' || e.key === 'I') {
+        e.preventDefault();
+        document.execCommand('italic', false);
+        handlePageInput();
+      } else if (e.key === 'u' || e.key === 'U') {
+        e.preventDefault();
+        document.execCommand('underline', false);
+        handlePageInput();
+      } else if (e.key === 'z' || e.key === 'Z') {
+        if (e.shiftKey) {
+          e.preventDefault();
+          document.execCommand('redo', false);
+        } else {
+          e.preventDefault();
+          document.execCommand('undo', false);
+        }
+        handlePageInput();
+      } else if (e.key === 'y' || e.key === 'Y') {
+        e.preventDefault();
+        document.execCommand('redo', false);
+        handlePageInput();
+      }
+    } else if (e.key === 'PageDown') {
+      if (currentPage < pages.length) {
+        e.preventDefault();
+        handleNextPage();
+      }
+    } else if (e.key === 'PageUp') {
+      if (currentPage > 1) {
+        e.preventDefault();
+        handlePrevPage();
+      }
+    }
   };
 
   const handleSave = async (
-    textToSave: string = content,
+    textToSave?: string,
     titleToSave: string = title,
     summaryToSave: string = summary,
     statusToSave: any = status,
     showToast: boolean = true
   ) => {
     if (!selectedChapter) return;
+    flushCurrentPage();
+
     try {
       setIsSaving(true);
+      const combined = pagesRef.current
+        .map(p => pageContentCacheRef.current[p.id] ?? p.content)
+        .filter(c => c && c.trim() !== '<p><br></p>')
+        .join('<!-- story-page-break -->');
+
+      const fullContent = textToSave !== undefined ? textToSave : (combined || pagesRef.current[0]?.content || '');
+
       const updated = await api.updateChapter(selectedChapter.id, {
         title: titleToSave,
-        content: textToSave,
+        content: fullContent,
         summary: summaryToSave,
         status: statusToSave,
+        pages: pagesRef.current
       });
 
       setSelectedChapter(updated);
@@ -234,11 +538,11 @@ export const WritingStudio: React.FC = () => {
     try {
       setIsGenerating(true);
       sound.playTypewriterKeystroke();
+      const plainContent = stripHtml(content) || content;
       const res = await api.askCoWriter({
         story_id: activeStory.id,
-        chapter_id: selectedChapter.id,
         action: aiAction as any,
-        content: content,
+        content: plainContent,
         chapter_title: title,
         character_notes: selectedCharacterNote,
         instruction: customInstruction,
@@ -256,14 +560,36 @@ export const WritingStudio: React.FC = () => {
   };
 
   const handleAppendAiText = () => {
-    if (!aiOutput) return;
-    const newContent = content ? `${content}\n\n${aiOutput}` : aiOutput;
-    handleContentChange(newContent);
-    handleSave(newContent, title, summary, status, true);
+    if (!aiOutput || !selectedChapter) return;
+    const formattedAi = aiOutput.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+    const activePage = pages[currentPage - 1];
+    if (!activePage) return;
+
+    const existingPageContent = pageContentCacheRef.current[activePage.id] ?? activePage.content ?? '';
+    const updatedPageContent = existingPageContent && existingPageContent.trim() !== '<p><br></p>'
+      ? `${existingPageContent}<p><br></p>${formattedAi}`
+      : formattedAi;
+
+    pageContentCacheRef.current[activePage.id] = updatedPageContent;
+    if (editorRef.current) {
+      editorRef.current.innerHTML = updatedPageContent;
+    }
+
+    const words = stripHtml(updatedPageContent).split(/\s+/).filter(Boolean).length;
+    setPages(prev => prev.map(p => p.id === activePage.id ? { ...p, content: updatedPageContent, word_count: words, save_status: 'unsaved' } : p));
+    pageVersionRef.current[activePage.id] = (pageVersionRef.current[activePage.id] || 0) + 1;
+    saveSpecificPage(activePage.id, updatedPageContent, pageVersionRef.current[activePage.id]);
     setAiOutput('');
+    addToast("AI Prose Integrated", `Appended to Folio ${currentPage}.`, "success");
   };
 
-  const wordCount = content.trim().split(/\s+/).filter(Boolean).length;
+  const currentPageData = pages[currentPage - 1];
+  const activeFolioContent = (currentPageData ? pageContentCacheRef.current[currentPageData.id] : undefined) ?? currentPageData?.content ?? '<p><br></p>';
+  const totalWordCount = pages.reduce((sum, p) => {
+    const raw = pageContentCacheRef.current[p.id] ?? p.content;
+    return sum + stripHtml(raw).split(/\s+/).filter(Boolean).length;
+  }, 0);
+  const wordCount = totalWordCount;
   const filteredChapters = chapters.filter(c =>
     c.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     `chapter ${c.chapter_number}`.includes(searchQuery.toLowerCase())
@@ -412,50 +738,230 @@ export const WritingStudio: React.FC = () => {
           </div>
         )}
 
-        {/* CENTER COLUMN: Distraction-Free Parchment Editor */}
-        <div className={`${zenMode ? 'lg:col-span-8 lg:col-start-3' : 'lg:col-span-6'} space-y-4`}>
-          <div className="relative rounded-xl parchment-sheet p-6 sm:p-10 border-2 border-[#8C7456] shadow-clipboard min-h-[750px] flex flex-col justify-between">
-            
-            {/* Top Tape & Chapter Badge */}
-            <div className="flex items-center justify-between border-b border-[#524131]/30 pb-4 mb-4">
-              <span className="font-mono text-xs sm:text-sm font-bold uppercase tracking-widest text-[#68523D]">
-                SCENE RECORD • CHAPTER {selectedChapter?.chapter_number || 1}
+        {/* CENTER COLUMN: Distraction-Free Multi-Page Parchment Editor */}
+        <div className={`${zenMode ? 'lg:col-span-8 lg:col-start-3' : 'lg:col-span-6'} space-y-3`}>
+          
+          {/* Professional Rich Text Editing Toolbar (Fixed above turning page) */}
+          <div className="bg-[#181411] p-1.5 rounded-xl border border-[#3A2E24] shadow-md">
+            <RichTextToolbar 
+              editorRef={editorRef} 
+              onContentChange={handlePageInput} 
+            />
+          </div>
+
+          {/* 3D Perspective Book Stage */}
+          <div className="relative book-stage-3d w-full">
+            {/* Under-Page Book Stack Effect (physical parchment sheets underneath) */}
+            <div className="absolute inset-0 rounded-xl book-stacked-edges pointer-events-none transform translate-x-1.5 translate-y-1.5 bg-[#B8A385]" />
+
+            {/* Realistic 3D Flipping Parchment Leaf */}
+            <AnimatePresence mode="wait" custom={pageDirection}>
+              <motion.div
+                key={currentPageData?.id || `folio-${currentPage}`}
+                custom={pageDirection}
+                variants={{
+                  enter: (dir: number) => ({
+                    rotateY: dir > 0 ? 75 : -75,
+                    opacity: 0.15,
+                    transformOrigin: dir > 0 ? 'left center' : 'right center',
+                    scale: 0.985,
+                    boxShadow: dir > 0
+                      ? '-25px 12px 40px rgba(0,0,0,0.6), inset 20px 0 35px rgba(0,0,0,0.35)'
+                      : '25px 12px 40px rgba(0,0,0,0.6), inset -20px 0 35px rgba(0,0,0,0.35)'
+                  }),
+                  center: {
+                    rotateY: 0,
+                    opacity: 1,
+                    transformOrigin: 'left center',
+                    scale: 1,
+                    boxShadow: '0 20px 40px -15px rgba(0, 0, 0, 0.75), inset 0 0 35px rgba(90, 65, 35, 0.22)',
+                    transition: {
+                      duration: 0.65,
+                      ease: [0.25, 1, 0.5, 1]
+                    }
+                  },
+                  exit: (dir: number) => ({
+                    rotateY: dir > 0 ? -80 : 80,
+                    opacity: 0.1,
+                    transformOrigin: dir > 0 ? 'left center' : 'right center',
+                    scale: 0.98,
+                    boxShadow: dir > 0
+                      ? '-35px 15px 50px rgba(0,0,0,0.7), inset 30px 0 45px rgba(0,0,0,0.45)'
+                      : '35px 15px 50px rgba(0,0,0,0.7), inset -30px 0 45px rgba(0,0,0,0.45)',
+                    transition: {
+                      duration: 0.55,
+                      ease: [0.4, 0, 0.2, 1]
+                    }
+                  })
+                }}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                className="relative rounded-xl parchment-sheet p-6 sm:p-9 border-2 border-[#8C7456] min-h-[660px] h-[660px] flex flex-col justify-between overflow-hidden shadow-2xl"
+              >
+                {/* Book Spine Crease & Shadow */}
+                <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 sm:w-12 book-spine-crease rounded-l-xl z-10" />
+
+                {/* Top Header: Scene Record & Folio Badge & Stamp */}
+                <div className="flex items-center justify-between border-b border-[#524131]/30 pb-3 mb-3 shrink-0 relative z-20">
+                  <div className="flex items-center space-x-3">
+                    <span className="font-mono text-xs sm:text-sm font-bold uppercase tracking-widest text-[#68523D]">
+                      SCENE RECORD • CHAPTER {selectedChapter?.chapter_number || 1}
+                    </span>
+                    <span className="bg-[#524131]/20 text-[#4E3D2C] px-2 py-0.5 rounded font-mono text-[11px] font-bold tracking-wider">
+                      FOLIO {currentPage} OF {pages.length}
+                    </span>
+                  </div>
+
+                  <Stamp
+                    label={status === 'completed' ? "FINAL REVISION" : status === 'in_review' ? "IN REVIEW" : "ACTIVE DRAFT"}
+                    type={status === 'completed' ? "green" : "amber"}
+                    rotation={-1}
+                    size="sm"
+                  />
+                </div>
+
+                {/* Editable Chapter Title Input */}
+                {currentPage === 1 ? (
+                  <input
+                    type="text"
+                    value={title}
+                    onChange={(e) => {
+                      setTitle(e.target.value);
+                      setLastSaved('Unsaved Changes...');
+                    }}
+                    placeholder="Chapter Title..."
+                    className="w-full bg-transparent font-serif text-2xl sm:text-3xl font-extrabold text-[#201710] border-b border-[#735F4A]/30 pb-2 focus:outline-none focus:border-[#735F4A] mb-3 shrink-0 relative z-20"
+                  />
+                ) : (
+                  <div className="flex items-center justify-between border-b border-[#735F4A]/20 pb-1.5 mb-3 shrink-0 relative z-20">
+                    <h3 className="font-serif text-base sm:text-lg font-bold text-[#3D2D1E] truncate italic">
+                      {title || "Untitled Chapter"} <span className="text-xs font-normal opacity-75 font-sans">(Continued)</span>
+                    </h3>
+                    <span className="font-mono text-[11px] text-[#735F4A]">
+                      Folio {currentPage}
+                    </span>
+                  </div>
+                )}
+
+                {/* Virtual Page ContentEditable Prose Area (Fixed Height) */}
+                <div className="relative flex-1 overflow-hidden">
+                  <div
+                    ref={(el) => {
+                      editorRef.current = el;
+                      if (el && currentPageData) {
+                        const targetHtml = pageContentCacheRef.current[currentPageData.id] ?? currentPageData.content ?? '<p><br></p>';
+                        if (el.innerHTML !== targetHtml) {
+                          el.innerHTML = targetHtml;
+                        }
+                        setIsPageOverCapacity(el.scrollHeight > 450);
+                      }
+                    }}
+                    contentEditable
+                    suppressContentEditableWarning
+                    dangerouslySetInnerHTML={{ __html: activeFolioContent }}
+                    data-placeholder="Begin penning the narrative on this folio... Describe the environment, characters, tensions, and unfolding secrets..."
+                    onInput={handlePageInput}
+                    onBlur={handlePageBlur}
+                    onKeyDown={handleEditorKeyDown}
+                    className="w-full h-[450px] max-h-[450px] overflow-y-auto bg-transparent font-serif text-base sm:text-lg md:text-[19px] text-[#221811] leading-relaxed focus:outline-none prose max-w-none empty:before:content-[attr(data-placeholder)] empty:before:text-[#8C765C] empty:before:italic empty:before:pointer-events-none pl-3 sm:pl-4 pr-1"
+                    style={{
+                      outline: 'none'
+                    }}
+                  />
+
+                  {/* Page Capacity Reached Alert Pill */}
+                  {isPageOverCapacity && (
+                    <div className="absolute bottom-2 right-2 bg-[#2B2015]/95 text-[#E6C687] border border-[#8C7456] shadow-lg rounded-full px-3 py-1 flex items-center space-x-1.5 font-mono text-[11px] font-semibold animate-pulse z-30">
+                      <span className="w-2 h-2 rounded-full bg-[#E5A84B] animate-ping" />
+                      <span>Page Full • Click Next Page (or Ctrl+Enter)</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Page Footer */}
+                <div className="pt-3 border-t border-[#524131]/30 flex items-center justify-between font-mono text-xs sm:text-sm text-[#544131] shrink-0 relative z-20">
+                  <span>Words: <strong className="font-bold">{currentPageData?.word_count || 0}</strong> (Total: {totalWordCount})</span>
+                  <span className="font-serif italic text-sm tracking-wider opacity-80">
+                    — Folio {currentPage} of {pages.length} —
+                  </span>
+                  <span>{currentPageData?.save_status === 'saving' ? 'Saving...' : currentPageData?.save_status === 'unsaved' ? 'Unsaved Changes...' : currentPageData?.save_status === 'error' ? 'Save Error' : lastSaved}</span>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          {/* Small Navigation Section DIRECTLY BELOW the Writing Editor */}
+          <div className="flex items-center justify-between bg-[#191512] px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-xl border border-[#30261E] shadow-xl">
+            {/* Previous Page Button */}
+            <button
+              onClick={handlePrevPage}
+              disabled={currentPage <= 1}
+              className={`flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-1.5 rounded-lg border font-mono text-xs sm:text-sm font-semibold transition-all ${
+                currentPage <= 1
+                  ? 'opacity-40 border-[#30261E] text-[#6A5A4A] cursor-not-allowed'
+                  : 'bg-[#261E17] border-[#544332] text-[#D8C7B0] hover:text-[#FFF4E4] hover:bg-[#382C22] hover:border-[#8C7456] shadow'
+              }`}
+              title={currentPage <= 1 ? "First page" : "Turn to Previous Page"}
+            >
+              <ChevronLeft className="w-4 h-4" />
+              <span className="hidden xs:inline">Previous</span>
+              <span>Page</span>
+            </button>
+
+            {/* Center Page Indicator & Interactive Page Pills */}
+            <div className="flex items-center space-x-2">
+              <span className="font-mono text-xs sm:text-sm font-bold tracking-wider text-[#C49A61]">
+                Page {currentPage} of {pages.length}
               </span>
 
-              <Stamp
-                label={status === 'completed' ? "FINAL REVISION" : status === 'in_review' ? "IN REVIEW" : "ACTIVE DRAFT"}
-                type={status === 'completed' ? "green" : "amber"}
-                rotation={-1}
-                size="sm"
-              />
+              {/* Clickable Page Pills */}
+              <div className="hidden md:flex items-center space-x-1 ml-2">
+                {pages.map((p, idx) => {
+                  const pageNum = idx + 1;
+                  const isActive = pageNum === currentPage;
+                  return (
+                    <button
+                      key={p.id || pageNum}
+                      onClick={() => handleJumpToPage(pageNum)}
+                      className={`w-6 h-6 rounded text-xs font-mono font-bold transition-all ${
+                        isActive
+                          ? 'bg-[#C49A61] text-[#14100D] shadow font-extrabold scale-105'
+                          : 'bg-[#292017] text-[#8C7A68] hover:text-[#E0D7C7] hover:bg-[#382D20]'
+                      }`}
+                      title={`Jump to Page ${pageNum}`}
+                    >
+                      {pageNum}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Add Page Shortcut Button */}
+              <button
+                onClick={handleAddNewPage}
+                className="ml-1 sm:ml-2 p-1.5 rounded-md bg-[#241C15] border border-[#4A3B2D] text-[#A69584] hover:text-[#E8D6BD] hover:border-[#8C7456] hover:bg-[#33261C] transition-colors"
+                title="Insert New Blank Page"
+              >
+                <Plus className="w-3.5 h-3.5" />
+              </button>
             </div>
 
-            {/* Editable Chapter Title Input */}
-            <input
-              type="text"
-              value={title}
-              onChange={(e) => {
-                setTitle(e.target.value);
-                setLastSaved('Unsaved Changes...');
-              }}
-              placeholder="Chapter Title..."
-              className="w-full bg-transparent font-serif text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#201710] border-b border-[#735F4A]/30 pb-2 focus:outline-none focus:border-[#735F4A] mb-4"
-            />
-
-            {/* Main Narrative Prose Textarea */}
-            <textarea
-              rows={22}
-              value={content}
-              onChange={(e) => handleContentChange(e.target.value)}
-              placeholder="Begin penning the narrative... Describe the environment, characters, tensions, and unfolding secrets..."
-              className="w-full flex-1 bg-transparent font-serif text-base sm:text-lg md:text-[19px] text-[#221811] leading-relaxed resize-none focus:outline-none placeholder:text-[#8C765C] placeholder:italic"
-            ></textarea>
-
-            {/* Bottom Editor Bar */}
-            <div className="pt-4 border-t border-[#524131]/30 flex items-center justify-between font-mono text-xs sm:text-sm text-[#544131]">
-              <span>Word Count: <strong className="font-bold">{wordCount}</strong></span>
-              <span>{lastSaved}</span>
-            </div>
+            {/* Next Page Button */}
+            <button
+              onClick={handleNextPage}
+              disabled={currentPage >= pages.length && !isPageOverCapacity}
+              className={`flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-1.5 rounded-lg border font-mono text-xs sm:text-sm font-semibold transition-all ${
+                currentPage >= pages.length && !isPageOverCapacity
+                  ? 'opacity-40 border-[#30261E] text-[#6A5A4A] cursor-not-allowed'
+                  : 'bg-[#261E17] border-[#544332] text-[#D8C7B0] hover:text-[#FFF4E4] hover:bg-[#382C22] hover:border-[#8C7456] shadow'
+              }`}
+              title={currentPage >= pages.length && !isPageOverCapacity ? "Last page" : "Turn to Next Page"}
+            >
+              <span className="hidden xs:inline">Next</span>
+              <span>Page</span>
+              <ChevronRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
 
@@ -663,22 +1169,11 @@ export const WritingStudio: React.FC = () => {
             {/* TAB 3: CHARACTER QUICK NOTES */}
             {assistantTab === 'characters' && (
               <div className="bg-[#191512] p-4 sm:p-5 rounded-xl border border-[#30261E] shadow-xl space-y-3.5 font-sans text-xs sm:text-sm">
-                <div className="flex items-center justify-between border-b border-[#2C241D] pb-3">
-                  <div className="flex items-center space-x-2">
-                    <Users className="w-4 h-4 text-[#C49A61]" />
-                    <span className="font-mono text-xs sm:text-sm font-bold text-[#E5DCce] uppercase tracking-wider">
-                      CHARACTER DOSSIERS ({characters.length})
-                    </span>
-                  </div>
-                  <button
-                    onClick={handleSyncCharacters}
-                    disabled={isSyncingChars}
-                    title="Scan manuscript chapters and extract characters"
-                    className="flex items-center space-x-1.5 px-2.5 py-1 rounded bg-[#2A2016] border border-[#C49A61]/40 text-[#E0B77D] hover:bg-[#3D2E20] text-xs font-mono font-bold transition-all disabled:opacity-50"
-                  >
-                    <RefreshCw className={`w-3.5 h-3.5 ${isSyncingChars ? 'animate-spin text-[#C49A61]' : ''}`} />
-                    <span>{isSyncingChars ? 'Scanning...' : 'Sync Manuscript'}</span>
-                  </button>
+                <div className="flex items-center space-x-2 border-b border-[#2C241D] pb-3">
+                  <Users className="w-4 h-4 text-[#C49A61]" />
+                  <span className="font-mono text-xs sm:text-sm font-bold text-[#E5DCce] uppercase tracking-wider">
+                    CHARACTER DOSSIERS
+                  </span>
                 </div>
 
                 <div className="space-y-2.5 max-h-[520px] overflow-y-auto pr-1">
@@ -688,35 +1183,11 @@ export const WritingStudio: React.FC = () => {
                         <span className="font-serif font-bold text-[#EDE3D4] text-sm sm:text-base">{char.name}</span>
                         <span className="text-xs font-mono text-[#DDAE72]">{char.role}</span>
                       </div>
-                      {char.personality_traits && char.personality_traits.length > 0 && (
-                        <div className="flex flex-wrap gap-1 mt-1">
-                          {char.personality_traits.map((t, idx) => (
-                            <span key={idx} className="text-[10px] px-1.5 py-0.5 rounded bg-[#18130F] text-[#A69584] border border-[#2E241C]">
-                              {t}
-                            </span>
-                          ))}
-                        </div>
-                      )}
                       <p className="font-serif text-xs sm:text-sm text-[#B8A794] leading-relaxed">
-                        {char.motivations || char.physical_description || "No additional lore logged."}
+                        {char.motivations || "No motivations logged."}
                       </p>
                     </div>
                   ))}
-
-                  {characters.length === 0 && (
-                    <div className="text-center py-8 space-y-3">
-                      <p className="text-[#8C7A68] text-xs sm:text-sm">
-                        No characters registered yet for this story universe.
-                      </p>
-                      <button
-                        onClick={handleSyncCharacters}
-                        disabled={isSyncingChars}
-                        className="px-3.5 py-2 rounded-lg bg-[#C49A61] text-[#14100D] font-bold text-xs hover:bg-[#D6AB72] transition-colors"
-                      >
-                        Scan Chapters to Extract Characters
-                      </button>
-                    </div>
-                  )}
                 </div>
               </div>
             )}

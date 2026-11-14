@@ -1433,6 +1433,56 @@
       ],
       "category": "plot_turn",
       "updated_at": "2026-11-14T12:49:25.314964"
+    },
+    "evt_08917923be": {
+      "id": "evt_08917923be",
+      "story_id": "story_0080debe78",
+      "event_number": 8,
+      "title": "Match Commencement and Initial Clash",
+      "description": "Sougat and Saptarshi enter a high-tension esports match against Soumik and Sagnik, who immediately execute an aggressive push on the map.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Soumik",
+        "Sagnik",
+        "Sougat",
+        "Saptarshi"
+      ],
+      "location": "Gaming Lobby / Tactical Corridor",
+      "chapter_id": "chap_de1d49472c",
+      "chapter_number": 2,
+      "chronological_position": 2.0,
+      "status": "Current",
+      "consequences": [
+        "Teams face off with intense tactical pressure",
+        "Soumik and Sagnik's aggressive rush forces Sougat and Saptarshi into a defensive position"
+      ],
+      "category": "conflict",
+      "updated_at": "2026-11-14T14:46:18.090603"
+    },
+    "evt_3e912f79d7": {
+      "id": "evt_3e912f79d7",
+      "story_id": "story_0080debe78",
+      "event_number": 9,
+      "title": "Sougat's Botched Flashbang",
+      "description": "Sougat attempts to throw a tactical flashbang, but it misfires off a wall and lands right back near them, blinding Saptarshi and drawing mockery from the opponents.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Sougat",
+        "Saptarshi",
+        "Soumik",
+        "Sagnik"
+      ],
+      "location": "Tactical Corridor",
+      "chapter_id": "chap_de1d49472c",
+      "chapter_number": 2,
+      "chronological_position": 2.2,
+      "status": "Current",
+      "consequences": [
+        "Saptarshi's character is temporarily blinded and shoots blindly",
+        "Soumik and Sagnik mock Sougat over voice chat"
+      ],
+      "category": "plot_turn",
+      "updated_at": "2026-11-14T14:46:18.101453"
     }
   },
   "memories": {
@@ -1977,16 +2027,16 @@
           "y": 40
         },
         "char_26da1bb42e": {
-          "x": 254,
-          "y": 311
+          "x": 97,
+          "y": 338
         },
         "char_ecd1277901": {
-          "x": 490,
-          "y": 394
+          "x": 454,
+          "y": 336
         },
         "char_d4648996b5": {
-          "x": 832,
-          "y": 68
+          "x": 960,
+          "y": 135
         }
       },
       "connections": [
@@ -1994,110 +2044,61 @@
           "id": "conn_auto_char_7_char_2_0",
           "sourceId": "char_77185a9f93",
           "targetId": "char_26da1bb42e",
-          "sourceName": "Saptarshi",
-          "targetName": "Soumik",
           "label": "Gaming Rivals",
           "type": "rivals",
-          "direction": "bidirectional",
-          "notes": "Sougat and Saptarshi are facing off against Soumik and Sagnik in the multiplayer tactical shooter match.",
-          "source_chapter": "Chapter 1",
-          "evidence_quote": "Oye Sougat aur Saptarshi! Bahut bade pro ban rahe ho na? Aaj tum dono ko aisa dhul chataenge ki game delete karne ki zaroorat hi nahi padegi...",
-          "confidence": 1,
-          "verified": true
+          "notes": "Sougat and Saptarshi are facing off against Soumik and Sagnik in the multiplayer tactical shooter match."
         },
         {
           "id": "conn_auto_char_7_char_d_0",
           "sourceId": "char_77185a9f93",
           "targetId": "char_d4648996b5",
-          "sourceName": "Saptarshi",
-          "targetName": "Sougat",
           "label": "Close Friends / Gaming Partners",
           "type": "friends",
-          "direction": "bidirectional",
-          "notes": "Saptarshi and Sougat play tactical shooter games together late at night, joking, bantering, and covering each other in matches.",
-          "source_chapter": "Chapter 1",
-          "evidence_quote": "Dil se toh dono ek dusre ko gaali hi de rahe the, par gaming ke is endless loop mein yehi toh unka apna heartwarming bromance tha.",
-          "confidence": 1,
-          "verified": true
+          "notes": "Saptarshi and Sougat play tactical shooter games together late at night, joking, bantering, and covering each other in matches."
         },
         {
           "id": "conn_auto_char_2_char_e_1",
           "sourceId": "char_26da1bb42e",
           "targetId": "char_ecd1277901",
-          "sourceName": "Soumik",
-          "targetName": "Sagnik",
           "label": "Gaming Partners / Teammates",
           "type": "allies",
-          "direction": "bidirectional",
-          "notes": "Soumik and Sagnik team up together in the multiplayer tactical shooter to play and trash-talk against Sougat and Saptarshi.",
-          "source_chapter": "Chapter 1",
-          "evidence_quote": "Sagnik ne turant uski haan mein haan milate hue apna character aage badhaya. 'Sahi bola Soumik! Inka 90 FPS aur coding ka ghamand aaj yeh Soumik aur Sagnik mil kar todne wale hain.'",
-          "confidence": 1,
-          "verified": true
+          "notes": "Soumik and Sagnik team up together in the multiplayer tactical shooter to play and trash-talk against Sougat and Saptarshi."
         },
         {
           "id": "conn_auto_char_d_char_2_2",
           "sourceId": "char_d4648996b5",
           "targetId": "char_26da1bb42e",
-          "sourceName": "Sougat",
-          "targetName": "Soumik",
           "label": "Gaming Rivals",
           "type": "rivals",
-          "direction": "bidirectional",
-          "notes": "Sougat and Soumik compete against each other in the multiplayer tactical shooter matches with mutual taunts and rivalry.",
-          "source_chapter": "Chapter 1",
-          "evidence_quote": "Voice channel mein Soumik ki hansi goonji, 'Kya hua Sougat bhai? Kahan gaya tera sniper jaisa aim? Idhar dekh, Soumik tere saare confidence ki hawa nikaal raha hai!'",
-          "confidence": 1,
-          "verified": true
+          "notes": "Sougat and Soumik compete against each other in the multiplayer tactical shooter matches with mutual taunts and rivalry."
         },
         {
           "id": "conn_auto_char_d_char_e_3",
           "sourceId": "char_d4648996b5",
           "targetId": "char_ecd1277901",
-          "sourceName": "Sougat",
-          "targetName": "Sagnik",
           "label": "Gaming Rivals",
           "type": "rivals",
-          "direction": "bidirectional",
-          "notes": "Sougat and Sagnik are opposing players in the match, frequently exchanging banter and attacking each other's characters.",
-          "source_chapter": "Chapter 1",
-          "evidence_quote": "Sagnik ne bhi turant apna character aage badhate hue mazaakiya andaz mein chidhaaya, 'Sahi pakda Soumik! Isko batao ki 2026 mein noob play kaise hota hai.'",
-          "confidence": 1,
-          "verified": true
+          "notes": "Sougat and Sagnik are opposing players in the match, frequently exchanging banter and attacking each other's characters."
         },
         {
           "id": "conn_auto_char_7_char_e_5",
           "sourceId": "char_77185a9f93",
           "targetId": "char_ecd1277901",
-          "sourceName": "Saptarshi",
-          "targetName": "Sagnik",
           "label": "Gaming Rivals",
           "type": "rivals",
-          "direction": "bidirectional",
-          "notes": "Saptarshi and Sagnik face each other as opponents in the match, with Saptarshi eliminating Sagnik's character during the game.",
-          "source_chapter": "Chapter 1",
-          "evidence_quote": "Saptarshi ne bina waqt gavaye apne character ko ekdum smooth speed se enemy ke line of fire ke beech utaar diya aur Sagnik par ek perfect burst fire karke usko wahi dher kar diya.",
-          "confidence": 1,
-          "verified": true
+          "notes": "Saptarshi and Sagnik face each other as opponents in the match, with Saptarshi eliminating Sagnik's character during the game."
         },
         {
           "id": "conn_auto_char_7_char_e_romance",
           "sourceId": "char_77185a9f93",
           "targetId": "char_ecd1277901",
-          "sourceName": "Saptarshi",
-          "targetName": "Sagnik",
           "label": "Romantic Partners",
           "type": "romance",
-          "direction": "bidirectional",
-          "notes": "Romantic partners whose open affection in crimson velvet defied the bleak collapse.",
-          "source_chapter": "Chapter 1",
-          "evidence_quote": "Let every rusting automaton in 2150 hear how desperately I adore you, Saptarshi...",
-          "confidence": 1,
-          "verified": true
+          "notes": "Romantic partners whose open affection in crimson velvet defied the bleak collapse."
         }
       ],
       "story_id": "story_0080debe78",
-      "updated_at": "2026-11-14T13:59:20.442134"
+      "updated_at": "2026-11-14T14:44:34.441337"
     }
   },
   "culprits": {

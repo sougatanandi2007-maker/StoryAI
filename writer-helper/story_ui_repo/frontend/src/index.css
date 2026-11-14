@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cormorant+Garamond:ital,wght@1,600;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,6 +34,26 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #C49A61;
   }
+
+  /* Parchment Rich Text Editor Styles */
+  .parchment-sheet ul {
+    list-style-type: disc !important;
+    padding-left: 1.5rem !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .parchment-sheet ol {
+    list-style-type: decimal !important;
+    padding-left: 1.5rem !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .parchment-sheet li {
+    margin-bottom: 0.25rem;
+  }
+  .parchment-sheet p {
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* Cross-browser scrollbar hiding for horizontal navigation bars */
@@ -60,6 +82,26 @@
     0 0 0 1px rgba(100, 75, 45, 0.35),
     inset 0 0 35px rgba(90, 65, 35, 0.22);
   position: relative;
+}
+
+/* 3D Book Stage & Physical Manuscript Styling */
+.book-stage-3d {
+  perspective: 1400px;
+  perspective-origin: center center;
+  transform-style: preserve-3d;
+}
+
+.book-stacked-edges {
+  box-shadow: 
+    3px 2px 0 #A69279,
+    6px 4px 0 #8D7962,
+    9px 6px 0 #6D5B46,
+    0 25px 45px -10px rgba(0, 0, 0, 0.85),
+    inset 0 0 35px rgba(90, 65, 35, 0.22);
+}
+
+.book-spine-crease {
+  background: linear-gradient(to right, rgba(45, 28, 15, 0.32) 0%, rgba(45, 28, 15, 0.14) 2.5%, rgba(45, 28, 15, 0.04) 6%, transparent 12%);
 }
 
 .parchment-subtle {
@@ -186,4 +228,177 @@
 /* Ambient glow */
 .brass-glow {
   box-shadow: 0 0 20px -3px rgba(196, 154, 97, 0.35);
+}
+
+/* ==========================================================================
+   INTERACTIVE MOTION & GOLDEN ACCENTS
+   ========================================================================== */
+
+/* Clickable Buttons */
+button, [role="button"], .interactive-btn {
+  transition: transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+button:active:not(:disabled), [role="button"]:active:not([aria-disabled="true"]) {
+  transform: scale(0.97);
+}
+
+/* Interactive Cards Golden Border Glow */
+.interactive-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.interactive-card:hover {
+  border-color: rgba(196, 154, 97, 0.6) !important;
+  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.85), 0 0 16px -2px rgba(196, 154, 97, 0.25) !important;
+}
+
+/* Input Fields Golden Focus */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #C49A61 !important;
+  box-shadow: 0 0 12px rgba(196, 154, 97, 0.35) !important;
+}
+
+/* Links Underline Golden Transition */
+.golden-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.golden-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #E0B77D, transparent);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.golden-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* =========================================================
+   STORYWEAVE AI — ANTIQUE FOUNTAIN PEN CURSOR SYSTEM
+   ========================================================= */
+
+/* 1. DEFAULT CURSOR: Antique Golden Fountain Pen (Hotspot at Nib Tip) */
+html,
+body,
+#root {
+  cursor: url('/assets/cursors/pen-default.png') 0 1,
+          url('./assets/cursors/pen-default.png') 0 1,
+          auto;
+}
+
+/* 2. HOVER HAND CURSOR: Victorian Antique Golden Pointing Hand */
+a,
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+select,
+summary,
+.cursor-pointer,
+.polaroid-card,
+.nav-tab,
+.desk-shortcut-card,
+[tabindex="0"]:not([contenteditable="true"]):not(input):not(textarea) {
+  cursor: url('/assets/cursors/pen-pointer.png') 0 0,
+          url('./assets/cursors/pen-pointer.png') 0 0,
+          pointer !important;
+}
+
+/* 3. CLICK STATE CURSOR: Fountain Pen with Golden Ripple (Hotspot at Nib Tip) */
+body.cursor-clicking,
+body.cursor-clicking *:not(input):not(textarea):not([contenteditable]):not([contenteditable="true"]) {
+  cursor: url('/assets/cursors/pen-click.png') 12 11,
+          url('./assets/cursors/pen-click.png') 12 11,
+          auto !important;
+}
+
+/* 4. NOT ALLOWED / DISABLED STATE */
+:disabled,
+[disabled],
+[aria-disabled="true"],
+.cursor-not-allowed,
+button:disabled,
+button[disabled] {
+  cursor: url('/assets/cursors/pen-not-allowed.png') 1 1,
+          url('./assets/cursors/pen-not-allowed.png') 1 1,
+          not-allowed !important;
+}
+
+/* 5. LOADING / WAITING STATE */
+body.cursor-loading,
+body.cursor-loading *,
+[aria-busy="true"],
+.is-loading {
+  cursor: url('/assets/cursors/pen-loading.png') 1 0,
+          url('./assets/cursors/pen-loading.png') 1 0,
+          wait !important;
+}
+
+/* 6. DRAG & DROP STATES ON INVESTIGATION BOARD */
+.cursor-grab {
+  cursor: grab !important;
+}
+.cursor-grabbing {
+  cursor: grabbing !important;
+}
+
+/* 7. STRICT TEXT EDITING ISOLATION — PRESERVE WRITING PRECISION */
+input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]),
+textarea,
+[contenteditable],
+[contenteditable="true"],
+.parchment-sheet [contenteditable],
+.parchment-sheet [contenteditable="true"],
+.manuscript-editor,
+.writing-area,
+.prose,
+code,
+pre,
+body.cursor-clicking input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]),
+body.cursor-clicking textarea,
+body.cursor-clicking [contenteditable],
+body.cursor-clicking [contenteditable="true"],
+body.cursor-clicking .parchment-sheet [contenteditable] {
+  cursor: text !important;
+}
+
+/* 8. GOLDEN RIPPLE CLICK ANIMATION (LIGHTWEIGHT & GPU-ACCELERATED) */
+.antique-gold-ripple {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999999;
+  border: 1.5px solid rgba(243, 226, 194, 0.95);
+  box-shadow: 0 0 12px rgba(196, 154, 97, 0.7), inset 0 0 8px rgba(243, 226, 194, 0.45);
+  transform: translate(-50%, -50%) scale(0.2);
+  animation: antiqueGoldenRipple 0.45s cubic-bezier(0.12, 0.8, 0.32, 1) forwards;
+}
+
+@keyframes antiqueGoldenRipple {
+  0% {
+    width: 6px;
+    height: 6px;
+    opacity: 0.95;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    width: 44px;
+    height: 44px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.3);
+  }
 }

@@ -28,6 +28,7 @@ interface StoryContextType {
   setActiveStoryId: (id: string) => void;
   setActiveChapterId: (id: string | null) => void;
   refreshStories: () => Promise<void>;
+  updateStoryInContext: (story: Story) => void;
   addToast: (title: string, message: string, type?: 'info' | 'success' | 'warning' | 'error') => void;
   removeToast: (id: string) => void;
   genreAesthetics: GenreAesthetic;
@@ -98,6 +99,20 @@ export const StoryProvider: React.FC<{ children: ReactNode }> = ({ children }) =
       } catch {}
       sound.playPaperRustle();
     }
+  };
+
+  const updateStoryInContext = (story: Story) => {
+    setActiveStory(story);
+    try {
+      localStorage.setItem('storyweave_active_story_id', story.id);
+    } catch {}
+    setStories(prev => {
+      const exists = prev.some(s => s.id === story.id);
+      if (exists) {
+        return prev.map(s => s.id === story.id ? story : s);
+      }
+      return [...prev, story];
+    });
   };
 
   const getGenreAesthetics = (genre?: Genre): GenreAesthetic => {
@@ -173,6 +188,7 @@ export const StoryProvider: React.FC<{ children: ReactNode }> = ({ children }) =
         setActiveStoryId,
         setActiveChapterId,
         refreshStories,
+        updateStoryInContext,
         addToast,
         removeToast,
         genreAesthetics,

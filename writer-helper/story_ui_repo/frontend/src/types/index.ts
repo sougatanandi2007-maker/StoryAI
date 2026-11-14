@@ -48,6 +48,17 @@ export interface Story {
 
 export type ChapterStatus = 'draft' | 'in_review' | 'completed';
 
+export interface Page {
+  id: string;
+  chapter_id: string;
+  page_number: number;
+  content: string;
+  word_count: number;
+  save_status?: 'saved' | 'saving' | 'unsaved' | 'error';
+  created_at?: string;
+  updated_at?: string;
+}
+
 export interface Chapter {
   id: string;
   story_id: string;
@@ -57,6 +68,7 @@ export interface Chapter {
   summary?: string;
   word_count?: number;
   status: ChapterStatus;
+  pages?: Page[];
   created_at?: string;
   updated_at?: string;
 }
@@ -66,6 +78,8 @@ export interface CharacterRelationship {
   relation_type: string;
   notes?: string;
 }
+
+export type InvestigationStatus = 'innocent' | 'person_of_interest' | 'unclassified';
 
 export interface Character {
   id: string;
@@ -88,6 +102,7 @@ export interface Character {
   last_appearance?: string;
   portrait_url?: string;
   character_arc?: string;
+  investigation_status?: InvestigationStatus;
   created_at?: string;
   updated_at?: string;
 }
@@ -140,15 +155,24 @@ export interface Memory {
   updated_at?: string;
 }
 
-export type PlotHoleSeverity = 'Critical' | 'Warning' | 'Suggestion';
+export type PlotHoleSeverity = 'Critical' | 'High' | 'Medium' | 'Low' | 'Warning' | 'Suggestion';
 export type PlotHoleCategory = 
   | 'character_inconsistency'
   | 'timeline_contradiction'
+  | 'missing_object'
+  | 'location_conflict'
   | 'location_inconsistency'
   | 'object_continuity_error'
   | 'personality_inconsistency'
+  | 'forgotten_storyline'
   | 'world_rule_violation'
-  | 'relationship_inconsistency';
+  | 'relationship_inconsistency'
+  | 'unexplained_appearance'
+  | 'unresolved_clue'
+  | 'contradictory_dialogue'
+  | 'universe_memory_contradiction';
+
+export type PlotHoleStatus = 'open' | 'under_review' | 'resolved' | 'ignored' | 'dismissed';
 
 export interface PlotHole {
   id: string;
@@ -161,8 +185,63 @@ export interface PlotHole {
   current_conflicting_info: string;
   source_chapters: string[];
   suggested_correction: string;
-  status: 'open' | 'resolved' | 'ignored';
+  continuity_impact?: string;
+  related_elements?: string[];
+  related_element_ids?: string[];
+  status: PlotHoleStatus;
   created_at?: string;
+  updated_at?: string;
+}
+
+export type BoardElementType = 'character' | 'location' | 'event' | 'evidence' | 'clue' | 'personality' | 'world_rule';
+export type CardColorTheme = 'polaroid' | 'aged' | 'manila' | 'yellow' | 'pink' | 'green' | 'blue' | 'red';
+export type CardStatusBadge = 'verified' | 'unverified' | 'suspect' | 'alive' | 'deceased' | 'missing' | 'open';
+
+export interface BoardCardPosition {
+  x: number;
+  y: number;
+}
+
+export interface InvestigationCard {
+  id: string;
+  story_id: string;
+  type: BoardElementType;
+  title: string;
+  subtitle?: string;
+  description?: string;
+  image_url?: string;
+  status?: CardStatusBadge | string;
+  is_culprit?: boolean;
+  is_pinned?: boolean;
+  color?: CardColorTheme | string;
+  position: BoardCardPosition;
+  size?: { width?: number; height?: number };
+  metadata?: Record<string, any>;
+  has_issue?: boolean;
+  issue_ids?: string[];
+  created_at?: string;
+  updated_at?: string;
+}
+
+export interface InvestigationConnection {
+  id: string;
+  source_id: string;
+  target_id: string;
+  label?: string;
+  type?: 'suspect' | 'contradiction' | 'timeline' | 'location' | 'evidence' | 'relation' | 'custom' | string;
+  notes?: string;
+  is_contradiction?: boolean;
+  issue_id?: string;
+  created_at?: string;
+}
+
+export interface InvestigationBoardState {
+  story_id: string;
+  elements: InvestigationCard[];
+  connections: InvestigationConnection[];
+  culprit_id?: string | null;
+  zoom?: number;
+  pan_offset?: { x: number; y: number };
   updated_at?: string;
 }
 
@@ -173,7 +252,6 @@ export interface CoWriterPayload {
   chapter_title: string;
   character_notes?: string;
   instruction?: string;
-  chapter_id?: string;
 }
 
 export interface CoWriterResponse {
