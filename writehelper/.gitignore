@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment variables (CRITICAL: NEVER COMMIT KEYS)
+.env
+*.env
+!.env.example
+*.local
+
+# Firebase credentials
+*serviceAccount*.json
+*firebase*.json
+!firebase.json
+
+# ChromaDB local data
+data/chroma/
+**/data/chroma/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing & Cache
+.pytest_cache/
+**/.pytest_cache/
+htmlcov/
+.coverage
+
+# Logs & temporary files
+*.log
+logs/
+scratch/

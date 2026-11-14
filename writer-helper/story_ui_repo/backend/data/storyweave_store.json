@@ -1,0 +1,1936 @@
+{
+  "stories": {
+    "story_ravenscar_noir": {
+      "id": "story_ravenscar_noir",
+      "title": "The Obsidian Key of Ravenscar",
+      "description": "In the rain-drenched coastal town of Ravenscar, 1894, private investigator Silas Vance unearths a conspiratorial occult society linked to an ancient brass clock tower and the sudden disappearance of Lady Evelyn Blackwood.",
+      "genre": "Mystery",
+      "subgenre": "Victorian Gothic Noir",
+      "theme": "The cost of forbidden truth & generational guilt",
+      "mood": "Suspenseful",
+      "setting": "Ravenscar Cliffside & Maritime Manor",
+      "time_period": "Autumn, 1894",
+      "character_count": 4,
+      "writing_style": "Cinematic, sensory Victorian prose with noir grit",
+      "chapter_count": 6,
+      "ending_type": "Twist Revelation",
+      "cover_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop",
+      "plot_outline": [
+        {
+          "chapter": 1,
+          "title": "The Cipher on the Tide",
+          "focus": "Silas Vance receives a waterlogged pocket watch with engraved coordinates from an anonymous courier."
+        },
+        {
+          "chapter": 2,
+          "title": "The Shadows of Blackwood Manor",
+          "focus": "An interrogation with Lord Alistair reveals discrepancies in Lady Evelyn disappearance."
+        },
+        {
+          "chapter": 3,
+          "title": "The Whispering Archives",
+          "focus": "Archivist Clara Moreau deciphers the sigil, uncovering a subterranean vault beneath the lighthouse."
+        },
+        {
+          "chapter": 4,
+          "title": "The Bell in the Deep",
+          "focus": "Infiltration of the midnight society and the confrontation at the sea caves."
+        },
+        {
+          "chapter": 5,
+          "title": "Broken Seals",
+          "focus": "The truth about Evelyn staged departure and the artifact true purpose."
+        },
+        {
+          "chapter": 6,
+          "title": "The Tide Reclaims All",
+          "focus": "Climactic standoff upon the crumbling cliffside as the storm breaks."
+        }
+      ],
+      "created_at": "2026-11-12T19:04:10.689858",
+      "updated_at": "2026-11-12T19:04:10.689858"
+    },
+    "story_95b26d2771": {
+      "title": "Integration Test",
+      "description": "Backend + frontend smoke test",
+      "genre": "Mystery",
+      "subgenre": "",
+      "theme": "",
+      "mood": "Suspenseful",
+      "setting": "",
+      "time_period": "",
+      "character_count": 4,
+      "writing_style": "Cinematic & Atmospheric",
+      "chapter_count": 8,
+      "ending_type": "Twist",
+      "plot_outline": [],
+      "cover_url": null,
+      "id": "story_95b26d2771"
+    },
+    "story_8ddd294511": {
+      "title": "Integration Test",
+      "description": "Backend + frontend smoke test",
+      "genre": "Mystery",
+      "subgenre": "",
+      "theme": "",
+      "mood": "Suspenseful",
+      "setting": "",
+      "time_period": "",
+      "character_count": 4,
+      "writing_style": "Cinematic & Atmospheric",
+      "chapter_count": 8,
+      "ending_type": "Twist",
+      "plot_outline": [],
+      "cover_url": null,
+      "id": "story_8ddd294511"
+    },
+    "story_27abba9759": {
+      "title": "the last lady in the house",
+      "description": "A private inquiry agent is summoned to an isolated coastal estate following an impossible disappearance. Strange maritime ciphers and subterranean tide vaults indicate a clandestine pact between the town founders.",
+      "genre": "Horror",
+      "subgenre": "Victorian Gothic Noir",
+      "theme": "The cost of forbidden truth & generational guilt",
+      "mood": "Suspenseful",
+      "setting": "Ravenscar Cliffside & Maritime Manor",
+      "time_period": "Autumn, 1894",
+      "character_count": 4,
+      "writing_style": "Cinematic, sensory Victorian prose with noir grit",
+      "chapter_count": 6,
+      "ending_type": "Twist Revelation",
+      "plot_outline": [
+        {
+          "chapter": 1,
+          "title": "The Cipher on the Threshold",
+          "focus": "A strange artifact arrives under cover of fog, bringing ominous warnings."
+        },
+        {
+          "chapter": 2,
+          "title": "Suspects in the Parlor",
+          "focus": "Interrogations reveal conflicting alibis and buried family debts."
+        },
+        {
+          "chapter": 3,
+          "title": "The Forged Ledger",
+          "focus": "A secret compartment yields documented proof of an unsolved prior crime."
+        },
+        {
+          "chapter": 4,
+          "title": "Footsteps in the Catacombs",
+          "focus": "A perilous midnight descent beneath the town exposes a second conspiracy."
+        },
+        {
+          "chapter": 5,
+          "title": "The Mask Slips",
+          "focus": "The primary suspect is murdered or exposed, shifting the inquiry to an unsuspected ally."
+        },
+        {
+          "chapter": 6,
+          "title": "The Final Reckoning",
+          "focus": "A high-stakes confrontation during a torrential storm as the ultimate truth is forced into the light."
+        }
+      ],
+      "cover_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop",
+      "id": "story_27abba9759"
+    },
+    "story_d9853fa35d": {
+      "title": "The Whispering Shadows",
+      "description": "A detective investigates a strange disappearance.",
+      "genre": "Mystery",
+      "subgenre": "",
+      "theme": "",
+      "mood": "Noir",
+      "setting": "",
+      "time_period": "",
+      "character_count": 4,
+      "writing_style": "Cinematic & Atmospheric",
+      "chapter_count": 8,
+      "ending_type": "Twist",
+      "plot_outline": [],
+      "cover_url": null,
+      "id": "story_d9853fa35d"
+    },
+    "story_e600e0b6d5": {
+      "title": "the last man story",
+      "description": "A man who thinks hje is the last man on earth , shows how he handle everything being alone in the world\n",
+      "genre": "Adventure",
+      "subgenre": "Victorian Gothic Noir",
+      "theme": "the sadness of the last man on earth",
+      "mood": "Emotional",
+      "setting": "howrah ",
+      "time_period": "2150",
+      "character_count": 7,
+      "writing_style": "Cinematic, sensory Victorian prose with noir grit",
+      "chapter_count": 6,
+      "ending_type": "Open Ambiguity",
+      "plot_outline": [
+        {
+          "chapter": 1,
+          "title": "The Cipher on the Threshold",
+          "focus": "A strange artifact arrives under cover of fog, bringing ominous warnings."
+        },
+        {
+          "chapter": 2,
+          "title": "Suspects in the Parlor",
+          "focus": "Interrogations reveal conflicting alibis and buried family debts."
+        },
+        {
+          "chapter": 3,
+          "title": "The Forged Ledger",
+          "focus": "A secret compartment yields documented proof of an unsolved prior crime."
+        },
+        {
+          "chapter": 4,
+          "title": "Footsteps in the Catacombs",
+          "focus": "A perilous midnight descent beneath the town exposes a second conspiracy."
+        },
+        {
+          "chapter": 5,
+          "title": "The Mask Slips",
+          "focus": "The primary suspect is murdered or exposed, shifting the inquiry to an unsuspected ally."
+        },
+        {
+          "chapter": 6,
+          "title": "The Final Reckoning",
+          "focus": "A high-stakes confrontation during a torrential storm as the ultimate truth is forced into the light."
+        }
+      ],
+      "cover_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop",
+      "id": "story_e600e0b6d5"
+    },
+    "story_0080debe78": {
+      "title": "the noob guy",
+      "description": "a gamer guy",
+      "genre": "Comedy",
+      "subgenre": "romantic",
+      "theme": "",
+      "mood": "Heartwarming",
+      "setting": "india",
+      "time_period": "2026",
+      "character_count": 4,
+      "writing_style": "",
+      "chapter_count": 6,
+      "ending_type": "Twist Revelation",
+      "plot_outline": [
+        {
+          "chapter": 1,
+          "title": "Press Start",
+          "focus": "Introducing Arthur, an endearingly clumsy gamer who treats real life with the same bewildered logic as a 1990s RPG tutorial."
+        },
+        {
+          "chapter": 2,
+          "title": "The NPC Encounter",
+          "focus": "Arthur attempts to flirt with a local barista by using gaming slang, leading to a delightfully awkward sequence of misunderstandings."
+        },
+        {
+          "chapter": 3,
+          "title": "Co-Op Mode",
+          "focus": "Desperate to win a neighborhood charity tournament, Arthur reluctantly recruits his utterly non-gamer grandfather as his teammate."
+        },
+        {
+          "chapter": 4,
+          "title": "Lag Spike",
+          "focus": "A series of comical misadventures culminates in a disastrously funny grocery store faux pas that tests Arthur's patience and optimism."
+        },
+        {
+          "chapter": 5,
+          "title": "Boss Battle",
+          "focus": "The day of the tournament arrives, and Arthur must step out of his comfort zone to support his grandfather in front of the whole town."
+        },
+        {
+          "chapter": 6,
+          "title": "New High Score",
+          "focus": "Arthur realizes that real-world connections are far better than any virtual achievement, ending with a heartwarming community celebration."
+        }
+      ],
+      "cover_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop",
+      "id": "story_0080debe78"
+    }
+  },
+  "chapters": {
+    "chap_01": {
+      "id": "chap_01",
+      "story_id": "story_ravenscar_noir",
+      "chapter_number": 1,
+      "title": "The Cipher on the Tide",
+      "summary": "Silas Vance receives the stopped pocket watch at his gas-lit agency during an October gale.",
+      "word_count": 267,
+      "status": "completed",
+      "created_at": "2026-11-12T19:04:10.689858",
+      "updated_at": "2026-11-12T14:06:06.940923",
+      "content": "The rain fell against the leaded panes of 14 High Quay Street with the persistence of a dying pulse.\n\nSilas Vance adjusted the brass desk lamp, the wick sputtering as a draft slipped beneath the heavy oak door. Before him lay a couriers parcel—rough butcher paper, bound with tarred hemp string, smelling unmistakably of brine and dead kelp.\n\nHe slit the twine with his silver folding knife.\n\nInside rested an antique pocket watch. Its heavy silver casing had been blackened by sea salt, the crystal cracked diagonally from the Roman numeral nine to four. The hands were seized at precisely 3:17. When Silas pried the rear casing open with the tip of his thumbnail, no pendulum hummed. Instead, engraved into the balance cock was a single word, cut with precision: REVERIE.\n\nTucked behind the escapement was a folded strip of parchment, stiffened by seawater. It bore no signature—only six lines written in iron gall ink, and a wax seal stamped with the three-headed raven of House Blackwood.\n\nIf you value what remains of the harbor, Vance, do not let Alistair light the maritime lantern tonight.\n\nSilas stood, reaching for his wool overcoat and the Webley revolver in the top drawer. Ravenscar had buried many things beneath its cold cliffs, but tonight, the tide was coughing them back up.\n\nEvery detail of the surroundings seemed etched with quiet menace. The damp sea air clung to the stone walls, condensing into slow, bead-like droplets that trailed downward like silent tears. In the distance, the foghorn sounded at deliberate four-minute intervals—a mournful iron groan that echoed across the jagged headland."
+    },
+    "chap_02": {
+      "id": "chap_02",
+      "story_id": "story_ravenscar_noir",
+      "chapter_number": 2,
+      "title": "The Shadows of Blackwood Manor",
+      "summary": "Silas confronts Lord Alistair Blackwood in his portrait gallery while inspecting the missing lady locked quarters.",
+      "word_count": 210,
+      "status": "completed",
+      "created_at": "2026-11-12T19:04:10.689858",
+      "updated_at": "2026-11-12T19:04:10.689858",
+      "content": "Blackwood Manor stood upon the jagged headland like a vulture perched over a carcass.\n\nLord Alistair Blackwood received Silas in the grand conservatory, where dying orchids hung in humid iron cages. Alistair was a man constructed of sharp angles and nervous habit, his fingers perpetually fidgeting with a heavy gold signet ring.\n\nMy sister was hysterical, Vance. Prone to nighttime wanderings, Alistair said, pouring amber port into two cut-crystal glasses without offering one. She took a boat. A tragic accident of grief.\n\nHysterical women rarely mail stopped watches with coordinates to investigators four hours before they disappear, My Lord, Silas replied softly, producing the silver timepiece from his coat pocket.\n\nAlistairs hand shook. A single droplet of dark wine spilled onto the marble floor.\n\nWhere did you get that? His voice dropped an octave, all veneer of aristocratic composure stripped clean. She kept that locked in the family reliquary. The key was buried with our father.\n\nSilas watched the lords eyes dart toward the grand grandfather clock at the end of the gallery. For a split second, Silas noticed something strange: the clocks brass pendulum was not swinging, yet a rhythmic metallic clicking echoed from behind the mahogany wainscoting."
+    },
+    "chap_03": {
+      "id": "chap_03",
+      "story_id": "story_ravenscar_noir",
+      "chapter_number": 3,
+      "title": "The Whispering Archives",
+      "summary": "Silas consults archivist Clara Moreau to translate the occult sigils and discover the hidden sea vault.",
+      "word_count": 582,
+      "status": "in_review",
+      "created_at": "2026-11-12T19:04:10.689858",
+      "updated_at": "2026-11-13T13:27:24.281753",
+      "content": "The Municipal Archives smelled of vinegar, dust, and decaying leather.\n\nClara Moreau laid the parchment beneath a heavy brass magnifying lens, her spectacles reflecting the yellow glow of three tallow candles. Her finger traced the ravens crest, tracing down to the microscopic script hidden within the feather flourishes.\n\nThis is not Victorian cipher, Silas, Clara murmured, her voice breathless. It is fourteenth-century maritime code. The Order of the Iron Tide.\n\nThe smugglers?\n\nSmugglers do not build underground vaults seventy fathoms into granite cliffs, she countered, sliding an ancient harbor survey across the scarred table. Look here. In 1842, the Blackwood family financed the construction of the north breakwater. On paper, it was to protect merchant vessels. But the excavation records show six hundred tons of stone were hauled out of the reef, not deposited.\n\nShe looked up at Silas, her eyes wide with dread.\n\nWhatever was sealed beneath Ravenscar was never meant to be opened from the sea. It was meant to be unlocked from the manors cellar.\n\nallisrar saiid fuck you\n\n\nThe silence that followed was swallowed by the cavernous gloom of the stacks, thick with the scent of damp lime and decaying calfskin. \n\nThen came the sharp, singular strike of an iron-ferruled cane against the flagstones.\n\nFrom the yawning shadows between the towering shelves of parish registers, Lord Alistair Blackwood stepped into the amber ring of candlelight. His greatcoat was damp with sea mist, the velvet collar dusted with brine, but his posture bore the rigid, predatory elegance of a man who held the deed to the very ground beneath their feet. In his leather-gloved left hand, he held a salt-blackened pocket watch, its hands forever locked at seventeen minutes past three.\n\n\"You presume far too much upon the dead, Miss Moreau,\" Blackwood said, his voice quiet, cultured, and laced with absolute contempt. \"And you meddle in ledgers that do not belong to you.\"\n\nSilas moved instinctively, shifting his shoulder to shield Clara, his hand slipping toward the heavy iron paperweight on the scarred oak table. \"The archives are municipal property, my Lord. Even the Blackwood reach ends at the town line.\"\n\n\"The Blackwood reach built the breakwater you so clumsily scrutinize,\" Alistair murmured, closing the distance with measured, unhurried steps. The cane came to rest upon the harbor survey, the brass tip pinning the map precisely over the excavated reef. \"Six hundred tons of stone, hauled out by lantern light in the freeze of forty-two. You think it an outrage of engineering? A smuggler's bolt-hole?\"\n\nHis gaze lifted, cold and pale as winter sleet, locking onto Clara behind her brass spectacles. \n\n\"The Order did not hollow that granite to hide brandy, girl. They built a cradle. They carved a throat through which the sleeper might be fed when the tide retreats to its lowest ebb.\" Blackwood leaned forward slightly, the faint, metallic scent of dried blood and sea-drift clinging to his lapels. \"The winter solstice is four days hence. The Blackwood debt will be settled in blood and bone, as it was written, or Ravenscar will slide into the bay and take every wretched soul in this harbor with it.\"\n\nHe tapped the watch face against the oak table—three deliberate, rhythmic raps.\n\n\"You have deciphered the map, but you do not hold the word. You possess the time, but not the vessel. So take your pedantic dread and choke on it. Step away from the table, Moreau, or Silas will not leave this basement on his own two feet.\""
+    },
+    "chap_ac5f38e697": {
+      "story_id": "story_27abba9759",
+      "chapter_number": 1,
+      "title": "The Cipher on the Threshold",
+      "content": "The story of the last lady in the house commences in Ravenscar Cliffside & Maritime Manor during Autumn, 1894.\n\n",
+      "summary": "A strange artifact arrives under cover of fog, bringing ominous warnings.",
+      "status": "draft",
+      "id": "chap_ac5f38e697",
+      "word_count": 19,
+      "updated_at": "2026-11-12T14:07:12.773284"
+    },
+    "chap_046b1de24f": {
+      "story_id": "story_d9853fa35d",
+      "chapter_number": 1,
+      "title": "Chapter 1: The Disappearance",
+      "content": "The rain tapped on the windowpane as Detective Vance lit a cigarette.",
+      "summary": "",
+      "status": "draft",
+      "id": "chap_046b1de24f",
+      "word_count": 12,
+      "updated_at": "2026-11-13T13:05:53.235263"
+    },
+    "chap_0b1ba7a0eb": {
+      "story_id": "story_ravenscar_noir",
+      "chapter_number": 4,
+      "title": "Chapter 4 - The Unfolding Incident",
+      "content": "\n\nThe silence that followed carried the weight of an unspoken confession. Across the weathered floorboards, shadows lengthened as the lantern wick flickered against the damp air. Every instinct gathered over years of quiet vigilance urged caution, yet turning back was no longer an option. The coordinates had been verified, the seals broken. Whatever lay beyond the threshold was now listening for the next step.\n\nEvery detail of the surroundings seemed etched with quiet menace. The damp sea air clung to the stone walls, condensing into slow, bead-like droplets that trailed downward like silent tears. In the distance, the foghorn sounded at deliberate four-minute intervals—a mournful iron groan that echoed across the jagged headland.",
+      "summary": "",
+      "status": "draft",
+      "id": "chap_0b1ba7a0eb",
+      "word_count": 113,
+      "updated_at": "2026-11-13T13:23:58.420133"
+    },
+    "chap_d4ff55d7c1": {
+      "story_id": "story_e600e0b6d5",
+      "chapter_number": 1,
+      "title": "The Cipher on the Threshold",
+      "content": "The story of the last man story commences in howrah  during 2150.He has a friend saptarshi whom he loved very much.\n\n\n\nThe charcoal wool of his overcoat grew heavy with the radioactive mist that clung to the skeletal remains of the Howrah grand terminus. Julian Calder adjusted his steel-framed spectacles, the glass catching the sickly, phosphorescent green of a dead railway signal that still flickered against the perpetual twilight of 2150. Beneath the iron ribs of the vaulted roof, where Victorian wrought-iron met the corroded titanium struts of a forgotten century, the silence was not merely an absence of sound. It was an accumulation. It weighed upon the chest like wet earth.\n\nHe knelt beside a rusted luggage trolley, his gloved fingers tracing the frost-rimed nameplate of his departed friend. *Saptarshi.* \n\nThe name lived only in the grain of Julian’s memory now, as scarce as unpoisoned water. They had built the makeshift distillation rig together three winters ago, back when the coal dust from the old yards still tasted of soot rather than ash. Saptarshi had possessed a laugh like dry leaves scraping over flagstones—sharp, ephemeral, and entirely gone from the earth. Julian closed his eyes for a fraction of a second, feeling the precise, hollow contour of that loss. There was no theatrical wailing left in him; the world had burned away such luxuries long ago. There was only the methodical accounting of ghosts.\n\nRising with cautious stiffness, Julian reached into the reinforced inner pocket of his coat. His fingers brushed the cold, familiar brass of the private telegraph key—a relic he had salvaged from the telegraph office before the cables went permanently dead. It was his anchor to a phantom network, a piece of dead technology he wired to nothingness every midnight, just to feel the mechanical click beneath his thumb and pretend that someone, somewhere across the desolate silt of the dried Hooghly River, might still be listening.\n\nAhead of him, the concourse opened into the vast, echoing shadow of the main hall. A single flicker of amber light caught his eye—not the green decay of the automated signals, but something organic, warm, and utterly impossible. \n\nJulian’s hand drifted toward the revolver tucked at his belt, his hawk-like features tightening into an expression of grim, unsentimental resolve. In a world where he was supposed to be the final living breath, an ember in the dark was either a hallucination born of lingering coal-fumes or a trap. He stepped forward into the gloom, his boots crunching softly upon a carpet of oxidized brass filings, ready to face whatever remained of humanity—or whatever had come to finish it.\n\nThe amber glow pulsed twice, a dying heartbeat synchronized with the erratic stutter of Julian’s own pulse beneath his ribs. \n\nHe moved with the practiced stealth of a man who had long since learned to treat his own shadow as a liability. The air inside the concourse tasted of scorched copper and damp masonry—the universal bouquet of the drowned century. Below the skeletal archways, the Hooghly basin was nothing more than a serpentine scar of cracked silt and bleached ballast stone, dividing the corpse of Calcutta from the iron ribs of Howrah where Julian stood sentinel. \n\nAs he neared the pillar of rusted girders from whence the light emanated, the smell shifted. Beneath the metallic rot came the unmistakable tang of burning paraffin and scorched wool. \n\nA shadow shifted against the fluted iron of Column 42.\n\nJulian’s boot heel locked against the grating, his weight settling instantly into his hips. He did not call out. In the year 2150, questions were acoustic suicide; if something breathed in the dark, it already knew he was there. Instead, he drew the heavy Colt navy revolver from his belt with absolute, terrifying economy of motion. The oiled metal made no sound against his woolens.\n\n\"Step out,\" Julian said. His voice was lower than the grinding of the distant tide-gates—a dry, rasping instrument unused to conversation, yet steady enough to cut through the vault's hollow acoustics. \"Slowly. Hands where the lantern catches them.\"\n\nThe amber light wavered. For a heartbeat, the only response was the wet drip of radioactive condensate somewhere in the rafters above, measuring out the seconds like a leaking clock.\n\nThen, a figure detached itself from the gloom. \n\nIt was small, draped in layers of stiff, salt-caked canvas and grease-blackened canvas scavenged from old river barges. A knitted woolen scarf, moth-eaten and dark with age, was wound tight around the lower half of the face, but the eyes above it—wide, bloodshot, and burning with a feverish, animal panic—fixed instantly upon Julian’s spectacles. \n\nIn the pale, sickly halo of the hand-rigged storm lantern, the stranger’s gaze did not hold the vacant stare of the feral scavengers who sometimes drifted down from the northern wastes. It held recognition. \n\nThe figure's gloved hand trembled, lifting the lantern an inch higher. With agonizing slowness, mittened fingers reached up to unknot the heavy wool at the throat. The scarf fell away, revealing chapped, bleeding lips and a jagged scar running from jaw to ear. \n\nJulian’s breath caught in his throat, a sharp, metallic pain tearing at his lungs. \n\nIt was a face he had consigned to the dirt three winters ago—a face he had buried beneath a cairn of slag-iron by the riverbank while the rain turned the ash to grey grease. \n\n*Saptarshi.*\n\nThe lips parted, trembling beneath the weight of a voice that had no business existing in a world emptied of echoes. \n\n\"You're late, Calder,\" Saptarshi rasped, his voice like dry leaves scraping over flagstones. \"I've been waiting by the wires for an hour.\"\n\nThe revolver remained leveled at the center of Saptarshi’s chest, its iron barrel a rigid line dividing the impossible from the real. Julian’s hand did not shake—not because he was entirely devoid of shock, but because the cold discipline of survival had become his skeleton. Yet behind the steel-rimmed spectacles, his pupils dilated in the amber glare. \n\n\"You're in the ground,\" Julian said, the words slipping out of him like dry air escaping a punctured lung. \"I poured the slag over you. I watched the river take the bank.\"\n\nSaptarshi let out a dry, rasping sound—the phantom leaf-scrape of a laugh that Julian had cataloged among the dead. The resurrected man lowered the lantern slightly, casting long, skeletal shadows across the riveted iron floor. \n\n\"Slag is a poor keeper, Julian,\" Saptarshi murmured, shifting his weight with a wince that bespoke real, aching muscle and bone. \"And the river has changed its mind about who it keeps.\"\n\nBefore Julian could demand the impossible accounting of how a corpse had walked its way back out of the silt, a third presence stirred from the deep recess behind the pillar. \n\nThe darkness there detached itself with the slow, deliberate creak of old leather and oiled canvas. A tall, stooped silhouette emerged from the gloom, leaning heavily upon a brass-shod walking staff. The newcomer stepped into the amber circle of the lantern, revealing a face deeply crosshatched with the geography of eighty hard years, crowned by a greasy astrakhan cap pulled low over one blind, milky eye. \n\nIt was Lullu Dickwala. \n\nLullu adjusted the heavy copper chronometer that swung from his waistcoat, tapping its glass face with a blackened thumbnail as if checking the punctuality of the resurrection.\n\n\"He talks too much, Calder,\" Lullu rasped, his voice like grinding millstones, rich with the sour-mash tang of fermented palm-sap and old coal. His good eye—sharp and yellowed as amber resin—fixed upon Julian with an unblinking, methodical scrutiny. \"I told him to wait in the dark until the signals cleared, but the boy always had an itch for conversation. Just like his mother. Or what was left of her before the boiler burst at the central works.\"\n\nJulian’s gaze flicked from Saptarshi’s living breath to Lullu’s ancient, unmoving form. The cold weight of the telegraph key in his coat pocket suddenly felt heavy, like a loaded die.\n\n\"You knew,\" Julian said, his voice dropping an octave, flat and lethal. \n\nLullu didn't flinch. He merely leaned a fraction heavier on his staff, the brass tip clicking sharply against the oxidized brass filings beneath his boot. \n\n\"I knew the wires across the Hooghly didn't hum by themselves three nights ago,\" Lullu replied, a thin, yellowed smile cracking the stubble of his jaw. \"And I knew a ghost doesn't leave boot-tracks in fresh radioactive ash. You aren't the only one who refuses to let a good memory rot in the dirt, Julian. But if we're going to keep playing at being the last men on earth, you'd best lower that iron before the listening posts up at the fort catch the reflection in your lenses.\"\n\nBefore Julian could lower the barrel of his Colt, a sharp, theatrical gasp echoed from the deeper shadows behind Lullu’s stooped frame, accompanied by the unmistakable rustle of fine, unspotted silk—an impossible luxury in the sulfurous rot of 2150. \n\nA figure stepped into the sickly amber halo of the lantern, brushing past Lullu’s greasy astrakhan coat with an exaggerated, shuddering shudder of distaste. \n\nIt was Sagnik. \n\nDraped in a remarkably well-preserved crimson velvet overcoat that defied the surrounding decay, Sagnik flicked a speck of invisible ash from his lapel with manicured, unblemished fingers. His sharp, heavily lined eyes swept over Julian with immediate, acidic disdain, before instantly softening into a pool of wet, unbridled adoration the moment they landed upon Saptarshi. \n\n\"Oh, thank the heavens,\" Sagnik drawled, his voice a dripping, nasal honey that cut right through the hollow acoustics of the Howrah terminus. He placed a gloved hand dramatically over his heart, fluttering his eyelashes in a performance of supreme, catty exhaustion. \"Put that dreadful, heavy metal thing away, Julian, you absolute Neanderthal. You’re giving us both wrinkles, and frankly, the atmosphere in this subterranean tomb is catastrophic for my complexion.\"\n\nJulian’s hawk-like gaze snapped toward the newcomer, his mind—trained on the rigid calculus of survival—temporarily short-circuiting at the sheer, unfiltered absurdity of the intrusion. \n\nSagnik didn't wait for an invitation. He glided past Julian’s shoulder with a sharp whiff of expensive, pre-collapse French lavender, entirely ignoring the leveled revolver. He immediately threw his arms around Saptarshi’s neck, burying his face into the damp, salt-caked canvas of the survivor's shoulder with a theatrical, trembling sigh. \n\n\"My poor, bruised darling,\" Sagnik cooed, his voice shifting instantly into a syrupy, whining purr as he looked up at Saptarshi with heavy-lidded, unabashed devotion. \"I told you waiting in the drafty dark for this brooding fossil would ruin your hair. If you catch a chill in this radioactive bog, I swear I will personally strangle Calder with his own telegraph wire. Didn't I tell you? Didn't I say he'd be standing here pointing guns like a tedious little peasant?\"\n\nSaptarshi winced slightly beneath the embrace, coughing into his fist, though a faint, weary fondness twitched at the corner of his chapped lips. \"Sagnik, for God's sake, keep your voice down. The automated signal posts—\"\n\n\"Let them listen!\" Sagnik snapped, tossing his head back with a sharp, bitchy flash of his eyes as he cast a venomous glance back at Julian. \"Let every rusting automaton in 2150 hear how desperately I adore you, Saptarshi, because clearly *some* people around here\"—he shot a glaring, sideways look at Julian’s steel-framed spectacles—\"have zero appreciation for romance, aesthetics, or the delicate nuances of gay despair in a dying world.\"\n\nLullu let out a low, gravelly chuckle from beneath his cap, leaning heavily on his brass-shod staff. \"I told him to stay behind the crates,\" Lullu rasped, shaking his head. \"He spent half the march from Calcutta complaining about the mud staining his boots.\"\n\nJulian stood frozen, the cold iron of the revolver still resting in his hand, looking from the ancient, unblinking Lullu, to the supposedly dead Saptarshi, and finally to Sagnik, who was currently busy tenderly smoothing down the lapels of Saptarshi's grease-blackened coat with aggressive, possessive affection. The illusion of being the last man on earth hadn't just shattered; it had been hijacked by a bitter, bickering domestic farce.\n\nThe dry, metallic snap of a hammer coming to full cock tore through the bickering silence like a thrown stone through thin glass. \n\nIt did not come from Julian’s Colt. \n\nJulian’s hawk-like eyes snapped away from Sagnik’s velvet coat, his gaze piercing the amber gloom toward the high, rusted iron catwalks that spanned the skeletal ribbing of the Howrah terminus. There, perched above the damp masonry like a gargoyle carved from coal-smoke and malice, stood Soumik. \n\nThe silhouette was unmistakable—lean, feral, and wrapped in a tattered greatcoat that fluttered in the draft of the dead railway vault. In Soumik’s gloved fist, an old service-pattern rifle was leveled downward, the black mouth of its barrel gleaming with a lethal, oily sheen in the sickly green phosphorescence of the automated signals. \n\n\"Stop your prattling, Sagnik,\" Soumik’s voice dropped from the rafters, flat, hollow, and devoid of any human warmth, ringing with the terrifying finality of a falling guillotine. \"The noise brings the rot-hounds down from the north.\"\n\nSagnik froze mid-gesture, his manicured fingers arrested halfway through smoothing Saptarshi’s collar. His theatrical pout curdled instantly into a mask of pure, acid panic. \"Soumik, don't be absurd, put that crude thing away—we were just—\"\n\nA sharp, deafening crack split the vaulted air. \n\nThe report of the rifle didn't merely echo; it battered against the wrought-iron beams, shaking loose a cascade of radioactive flakes and grey soot that dusted the cracked ballast stones. \n\nSagnik’s breath hitched in a high, choked whistle. The crimson velvet of his overcoat blossomed into a dark, spreading stain across his chest, right where his hand had rested a heartbeat before. He staggered backward, his heavily lined eyes widening in a grotesque parody of disbelief, before his knees buckled and he collapsed into the oxidized brass filings with the lifeless weight of a discarded bundle of rags. \n\n\"Sagnik!\" Saptarshi screamed, the sound tearing raw and ragged from his chapped throat. He lunged forward, dropping his storm lantern—the glass shattering in a starburst of amber fire and spilling burning paraffin across the floor. \n\nBefore Saptarshi could reach the fallen velvet heap, a second dry, concussive roar detonated from the catwalk. \n\nThe impact lifted Saptarshi off his boots. A spray of dark, arterial mist caught the dying amber light as Saptarshi slammed backward against Column 42, his chest torn open by the heavy-caliber round. He slid down the fluted iron, leaving a greasy, smeared trail of crimson against the rust, his bloodshot eyes fixing on Julian’s steel-rimmed spectacles with a silent, dying plea before the light drained from them entirely.\n\nSilence descended upon the concourse with the suddenness of a slammed vault door. The only sound was the hissing of the spilled paraffin eating into the soot and the wet, rhythmic drip of condensate from the rafters far above.\n\nLullu didn't run. The old man merely leaned an inch heavier upon his brass-shod staff, his single yellowed eye turning upward toward the catwalk with a slow, unimpressed calculation. \n\nJulian stood frozen, the Colt navy still dangling loose in his grip. The delicate, bitter domestic farce had been wiped clean in the span of two heartbeats, leaving only the cold, unyielding iron of murder and the heavy, suffocating weight of 2150. \n\nHigh above, Soumik racked the bolt of the rifle. A spent brass casing spun from the breech, tumbling through the dim air to ping softly against the concrete floor at Julian’s feet.\n\nA heavy, rhythmic boot-fall crunched upon the iron catwalk above, followed by the metallic drag of a zinc bucket. A wet, coughing heave broke the vaulted silence before a voice rasped out from the damp rafters—flat, grating, and thick with the rancid grease of a railway soup-kitchen.\n\n\"You left the back hatch unlatched, Soumik,\" Mashir Chele muttered, his heavy frame heaving into view as he hauled a dripping sack of copper scrap over the rusted railing. His wide, grease-stained face was half-swathed in wet jute, his small, pig-like eyes squinting through the sulfurous haze down at the carnage below. \"The salt-mist is rusting the pulleys. And stop wasting the lead on the pretty ones. We need the brass buttons off that red coat.\"\n\nSoumik did not lower the barrel of his service-pattern rifle, though his hawk-like shoulders tensed beneath his tattered greatcoat. \"They were making too much noise,\" Soumik spat back, his voice dropping into the chill gloom. \"The southern pack is moving past the canal. If the hounds smell blood here, we'll be digging our own graves in the silt.\"\n\nMashir Chele spat a dark stream of betel-nut juice over the edge; it plummeted twenty feet to splatter wetly against the oxidized filings a yard from Lullu’s polished boot-tip. The old man didn't flinch, his single yellowed eye merely tracking the red stain as it soaked into the grey dust.\n\n\"Let the hounds come,\" Mashir Chele grunted, his thick, calloused fingers already rummaging through the pockets of his canvas apron for a rusted wire-cutter. \"There's meat on the bones yet, and the coal-stoves need feeding before the frost sets in from Dum Dum.\"\n\nJulian Calder did not look down at the spent brass casing rolling against his boot. His steel-framed spectacles caught the sickly phosphorescent green of the dead signal overhead, casting a cold, emerald hue across his hawk-like features as he stared at the red-stained iron of Column 42. Saptarshi was gone. The makeshift distillation rig, the dry leaf-scrape of a laugh, the three winters of surviving the sulfurous rot of 2150—all of it had been erased by the oily gleam of Soumik’s rifle. There was no theatrical wailing left in Julian, only the hollow, methodical realization that the last man on earth was now truly, irrevocably alone once more.\n\nLullu Dickwala stirred, his brass-shod staff grating against the oxidized filings with a sharp, metallic ring. The old man tapped his copper chronometer with a blackened thumbnail, his single amber-resin eye shifting from Saptarshi’s lifeless form to the dark pool spreading across Sagnik’s crimson velvet.\n\n\"The time,\" Lullu rasped, his voice like grinding millstones smelling faintly of fermented palm-sap, \"has a nasty habit of running backward when you're busy mourning ghosts.\"\n\nHigh above, Soumik racked the bolt again, the sharp metal-on-metal clack echoing off the vaulted rafters like the striking of a match in a damp cellar. \"Move the bodies to the drainage trench,\" Soumik called down, his voice flat and devoid of human cadence. \"The mist is lifting past the old water-tower. If we stay in the open, the northern scavengers won't even wait for us to cool.\"\n\nJulian did not blink. His hand remained steady around the grip of the Colt navy, the metal cold against his palm, though the internal machinery of his mind had ground to a permanent, irreversible halt. Saptarshi’s lifeless head rested at an impossible angle against the rusted fluting of Column 42, his bloodshot eyes staring upward into the vaulted gloom where the automated signals still bled their green decay. The silence that followed the gunfire was heavier than the radioactive mist settling over the Howrah terminus—a suffocating, leaden vacuum that filled the spaces where a friend's voice had lived only moments before.\n\n\"Well?\" Mashir Chele’s voice scraped down from the catwalk, heavy and indifferent, accompanied by the metallic rattle of zinc buckets shifting against iron. \"Are we spending the night admiring the artwork, or are we stripping the buttons before the frost sets in?\"\n\nLullu Dickwala leaned forward, his single amber-resin eye fixed upon the widening pool of crimson soaking into the oxidized brass filings. With a slow, deliberate creak of leather and bone, the old man reached down with his blackened thumbnail and tapped the glass face of his copper chronometer. \n\n\"The boy is finished, Mashir,\" Lullu rasped, his voice like two millstones grinding without grain. \"Even Calder isn't foolish enough to argue with lead at this distance. Though I'd wager his telegraph key is burning a hole in his pocket right about now.\"\n\nJulian did not answer. He stepped forward, his boots crunching over the shattered glass of the fallen storm lantern until he stood directly before the dead weight of Saptarshi. The salt-caked canvas of the survivor's coat was already growing stiff with the damp chill rising from the dried Hooghly basin. There was no warmth left to salvage, no remaining spark of the man who had laughed like dry leaves across flagstones. The world had proven, with brutal economy, that it had no room for ghosts—or for the men who tried to keep them alive.\n\nFrom above, Soumik’s boots hit the iron grating with a heavy, deliberate thud as he descended the service ladder from the catwalk. The service-pattern rifle was slung loosely across his chest, its oily barrel catching the sickly green phosphor of the dead signal. He did not look at Julian, nor did he offer a glance toward the crimson velvet heap where Sagnik lay motionless. He walked straight past Column 42, his jaw set in a hard, impassable line, and reached down to grab Saptarshi by the stiffened collar of his canvas coat.\n\n\"Help me with the legs,\" Soumik said, his voice flat, stripped of any inflection that might suggest regret or malice. It was simply the voice of a butcher clearing the floorboards at the end of a long shift.\n\nJulian looked down at his own hands—gloved, steady, and entirely useless. The private telegraph key in his reinforced inner pocket gave no phantom click against his ribs; it remained as dead and silent as the wires overhead. With a grim, unsentimental economy of motion, Julian reached down, grasped Saptarshi’s boot by the frozen leather, and helped drag what remained of his only friend toward the dark mouth of the drainage trench.",
+      "summary": "A strange artifact arrives under cover of fog, bringing ominous warnings.",
+      "status": "draft",
+      "id": "chap_d4ff55d7c1",
+      "word_count": 3637,
+      "updated_at": "2026-11-13T15:34:07.369052"
+    },
+    "chap_2900819ce6": {
+      "story_id": "story_e600e0b6d5",
+      "chapter_number": 3,
+      "title": "Chapter 3 - The Unfolding Incident",
+      "content": "The cold air of the concourse tasted of damp coke-dust and old iron. Soumik’s boots dragged across the ribbed plating, the dead weight of Saptarshi’s heels leaving parallel furrows in the thick layer of soot that had settled over the floor since the great pumps failed. \n\n\"Don't let the grit get into the joints,\" Soumik muttered, his breath pluming grey against the vault’s permanent twilight. His shoulders strained beneath the wet wool of his greatcoat as he heaved the upper torso past the rusted stanchion of Column 42. \"Once the salt sets in the marrow, you can't even sell the bones to the grease-boilers down at Kidderpore.\"\n\nJulian did not offer to take the other side. His fingers remained buried in the deep, reinforced pockets of his coat, curled tight around the cold, dead brass of the telegraph key. The metal bit into his palm, a sharp, familiar anchor against the rising tide of silence that always followed the cessation of gunfire. \n\nLullu Dickwala watched them from the shadow of the pillar, his brass-shod staff planted firmly between his worn leather boots like the mast of a broken barge. His single amber-resin eye caught the sickly green phosphor of the distant signal box, reflecting the dying luminescence with an unblinking, reptilian fixity. \n\n\"The boy was always impatient,\" Lullu rasped, the sound like dry leaves scraping across a frozen flagged court. He reached into his waistcoat, his blackened thumbnail clicking against the copper casing of his chronometer before letting the lid snap shut with a dull *tink*. \"Thought the wires were still talking to something north of the canal. Thought there were still clerks at the junction stamping forms for the grain barges. A boy born in forty-five doesn't understand what a dead city sounds like when the rats finally clear out.\"\n\n\"He had papers,\" Julian said. His voice was flat, level, cutting through the hollow acoustics of the station with the dry precision of an autopsy report. \n\n\"Papers won't butter a stale crust, Calder,\" Lullu replied, shifting his weight with a dry creak of hide and bone. \"You've got a pocket full of copper and wire that hasn't ticked a true word since the governor’s barge sank off Garden Reach. You keep listening to that little box like an old woman waiting for a son who died in the trenches.\"\n\nSoumik dropped Saptarshi’s boots with a dull, hollow thud against the ribbed iron. He did not step back immediately; instead, he stood over the inert canvas bundle, his chest heaving slowly under the tattered wool. His dark, hawk-like eyes flicked upward toward the high, soot-blackened rafters where the rusted remnants of the overhead cranes hung like the ribs of prehistoric leviathans. \n\n\"The north hatch is clear,\" Soumik said, his voice dropping into the space between them. \"The tide’s coming up the basin. If we're going to move the crate before the brackish water hits the lower conduits, we need to take it now.\"\n\nJulian pulled his hand from his pocket, the telegraph key leaving a faint smudge of cold grease against the wool lining. He looked down at the dead man at his feet—at the stiffened canvas of the coat, the rimed frost forming along the edges of the unbuttoned collar, the absolute, unyielding finality of a world that refused to provide answers even to those who stayed behind to ask them. \n\n\"The crate stays,\" Julian said. \n\nSoumik’s jaw tightened, the muscle beneath his stubbled cheek twitching once. \"It’s copper-lined. We can trade the sheeting at the dock-gates for enough paraffin to last through the freeze.\"\n\n\"It stays,\" Julian repeated, his gaze lifting to meet Soumik’s unblinking stare across the dim expanse of the concourse. \"And we leave Saptarshi where the iron won't wash him out with the scum.\"\n\nLullu let out a low, dry chuckle that ended in a wet, rattling cough. He turned his astrakhan cap toward the dark mouth of the drainage trench, his amber eye gleaming in the gloom. \"Let the mud have him, then. The Hooghly doesn't charge for storage.\"\n\nThe dark mouth of the drainage trench yawned before them like an unsealed crypt, exhaling a damp, mineral-laden breath that tasted faintly of old sulfur and stagnant river-silt. Julian stepped closer to the edge, his boots crunching upon the brittle crust of oxidized filings. The steel-framed spectacles on his bridge caught the sickly, intermittent flash of the green signal-lamp overhead, throwing two emerald arcs across the planes of his hollow cheeks.\n\n\"A sentimental journey for a dead clerk,\" Soumik muttered, his fingers hooking into the stiff collar of Saptarshi’s canvas coat with careless familiarity. With a sudden, synchronized heave, Soumik and Lullu—whose brass-shod staff clicked sharply against the iron plates—dragged the inert bundle toward the drop. \n\nThere was no ceremony, no whispered liturgy for the end of days. In Howrah, 2150, death was merely a shift in inventory. \n\nSaptarshi’s shoulder struck the wet brickwork of the trench lining with a dull, hollow *thump*, followed immediately by the heavier, wet slide of limbs slipping into the dark mire below. A small cloud of grey, phosphorescent scum bubbled to the surface of the brackish water, winked once in the dim air, and vanished. \n\nJulian did not look down into the trench. Instead, his hand slipped back into the deep, reinforced pocket of his charcoal wool overcoat, finding the cold, familiar contours of the telegraph key. His thumb traced the brass stud, feeling the microscopic ridges where a thousand telegrams had once been hammered out across a continent that no longer breathed. \n\n\"The northern pack is moving,\" Soumik said, wiping his grease-stained palm across his thigh as he straightened his back. His dark eyes remained fixed on the cavernous shadows stretching toward the old platform gates. \"Mashir Chele won't wait long by the cranes. If we're going to check the wire-vaults beneath the ticket office before the tide backs up through the culverts, we need to move now.\"\n\nLullu Dickwala let out a dry, rasping breath, his single amber-resin eye reflecting the green phosphor with predatory indifference. He tapped his copper chronometer against his blackened thumbnail, the metallic click sharp and lonely in the hollow vault. \n\n\"The boy left his key in the pocket,\" Lullu murmured, his voice like grinding stone. He tilted his astrakhan cap toward Julian. \"The one from the central loop. He swore he heard the relay clicking two nights ago, right before the substation went dark.\"\n\nJulian’s fingers tightened around the metal in his pocket until the edges bit into his palm. The world outside these soot-stained iron ribs was a graveyard of drowned barges and rusted rails, a silent monument to the last man delusion that he and his companions lived within. But down here, in the damp, rotting belly of the station, the wires still remembered names that the earth had forgotten.\n\n\"It wasn't the central loop,\" Julian said quietly, his voice cutting through the drip of condensate like a dry blade. \"It was the loop to Dum Dum.\"\n\n\"Then let's see if anyone's answering,\" Soumik said, turning his back on the drainage trench and gripping the service-pattern rifle in his gloved fist. He didn't wait for agreement, his heavy boots splashing faintly as he stepped toward the rusted archway of the subterranean stairs. \n\nJulian lingered for a fraction of a second longer, his eyes casting one final, lingering look at the dark, oily surface of the water where Saptarshi had disappeared. Then, with the grim, unsentimental economy of a man who knew the dead never wrote back, he turned and followed the sound of iron boots into the dark.",
+      "summary": "",
+      "status": "draft",
+      "id": "chap_2900819ce6",
+      "word_count": 1268,
+      "updated_at": "2026-11-13T17:15:46.011472"
+    },
+    "chap_1cc2c532c9": {
+      "story_id": "story_0080debe78",
+      "chapter_number": 1,
+      "title": "Press Start",
+      "content": "\nSougat apne room ke andheray mein, sirf RGB keyboard ki blue aur red glow ke sahare, monitor screen ke samne baitha tha. Ek haath mein mouse aur dusre se chipka hua chai ka cup, jo abhi tak thanda bhi nahi hua tha. \n\n\"Bhai, ye match firse haar gaye toh kasam se game delete kar dunga,\" Sougat ne headpiece mic ke paas apna muh laate hue kaha.\n\nDusri taraf se Saptarshi ki aawaz aayi, jo apni chair par stretch karte hue headset adjust kar raha tha. \"Arre Sougat bhai, tu har baar yahi bolta hai aur agle ghante rank push karne lagta hai. Tera 'delete' wala threat mere 90 FPS wale PC jitna hi fake hai!\"\n\nSougat ne screen par apna inventory check kiya. 2026 ke is naye multiplayer tactical shooter mein, unka squad wahi haar ke kabaar mein khada tha. \"Saptarshi, tu has mat. Meri coding aur tera aim—dono aajkal ekdum dhoka de rahe hain. Pata nahi kab sudhrenge.\"\n\nSaptarshi haste hue bola, \"Coding toh fir bhi fix ho jaati hai bhai, tere ye noob wale reflex kaise fix honge? Ek kaam kar, paani peeke aa, thoda brain cell reboot kar le.\"\n\nSougat ne screen par dekha jahan Saptarshi ka character uske virtual avatar ke paas aakar emote maar raha tha. Dil se toh dono ek dusre ko gaali hi de rahe the, par gaming ke is endless loop mein yehi toh unka apna heartwarming bromance tha. \n\n\"Ruk abhi, agla round tera bhai hi carry karega,\" Sougat ne confidence se bolte hue 'Ready' button par click kiya.\n\n\"Carry karega? Bhai, pehle ye toh dekh le ki tu grenade phekne ke chakkar mein khud ke character ko hi uda deta hai,\" Saptarshi ne mic par ek thakha hua par pyaar bhara thahaka lagaya. \n\nSougat ne chai ka aakhri ghoont bhara, cup table par patak diya aur mouse par apni grip mazboot ki. Uske room ki deewaron par blue aur red LED lights ka reflection aise nach raha tha jaise unka yeh 2026 ka naya-naya game unke mood ke sath khel raha ho. Bahar gali mein kisi scooter ka horn baja, par unke liye duniya ka aakhri kona bas yeh 24-inch ka monitor hi tha.\n\n\"Chal, is baar no mistakes. Tu bas peeche se cover dena, aur haan, agar is baar bhi mara na, toh chai ki treat teri taraf se hogi,\" Sougat ne shart lagate hue kaha.\n\nSaptarshi muskurate hue apne 90 FPS rig par mouse glide karne laga. \"Manzoor hai! Par treat jeetne ke baad bhi khayega toh tu hi, kyunki teri bhookh ka koi ant nahi hai.\"\n\nLobby ka countdown shuru ho chuka tha—3, 2, 1... Aur uss chote se screen ke samne baithe dono dost ek baar phir us digital jung mein कूद pade, jahan haar aur jeet se zyada zaroori yeh hansi aur dosti thi jo is adhi raat ko bhi roshan kar rahi thi.\n\nMap load hote hi screen par synthetic aawazon ka shor goonj utha. Sougat ne apna headpiece mic thoda aur paas kiya, saansein rokte hue apne virtual character ko ek industrial corridor ke kone mein chupaya. \n\n\"Dekh Saptarshi, is baar main flank kar raha hoon. Tu seedha middle gate se entry le aur dhyaan rakhna, pichli baar ki tarah kisi corner mein atak mat jaana,\" Sougat ne thode hoshiyaari wale tone mein kaha, jabki uske khud ke haath mouse par tharthara rahe the.\n\nSaptarshi apne 90 FPS PC par screen ke smooth framerates ka fayda uthate hue bina kisi delay ke aage badha. \"Bhai, mera movement मक्खन jaisa hai, tu bas apne footstep check kar. Aise chal raha hai jaise paanv mein chappal pehen ke sniper map mein utar aaya ho.\"\n\n\"Chup kar, noob,\" Sougat hansa, aur screen par apne character ko aage badhaya. \n\nLekin jaise hi unka squad map ke center ki taraf badha, saamne se enemy team ke do players ne achanak dhawa bol diya. Goliyon ki tarah aawazein aur flashbangs ki chamak se unka monitor jagmagane laga. \n\n\"Arre bhai! Aage bomb hai, aage bomb—\" Sougat chillaya, aur panic mein aakar keyboard par galat key dabagayi. Uska character seedha ek deewar se takra kar ruk gaya aur wahi freeze ho gaya. \n\nSaptarshi ne turant react karte hue apne character ko enemy ke line of fire ke beech khada kiya aur ek perfect headshot ke sath pehle dushman ko dharti par gira diya. \"Bhai, tu sach mein disaster management ka brand ambassador hai! Ek toh tu khud fass jata hai, upar se mera bhi dhyan bhatka deta hai.\"\n\nSougat ne sharminda hote hue screen par dekha jahan uska character abhi bhi corner mein chupne ki naakam koshish kar raha tha. Usne thandi ho chuki chai ki taraf dekha aur phir monitor par. \"Arre, strategy thi wo! Enemy ko confuse karne ki high-level tactical move... tu nahi samjhega.\"\n\n\"Haan bhai, itni high-level ki ab agla round shuru hote hi mujhe hi tujhe revive karna padega,\" Saptarshi ne mic par muskurate hue kaha, uski aawaz mein wohi purana dostana mazak tha jo kisi bhi haar ko hansi mein badal deta tha.\n\nRound khatam hone ka buzzer baja, aur screen par 'Defeat' ka bada sa red font chamka. \n\nSougat ne zor se apna sir desk par maara, par ek hi second baad woh khilkhila kar hans pada. \"Chal, koi baat nahi. Agli baar pakka jeetenge. Par abhi ke liye... tera chai ki treat ka wada pakka raha, kyunki shart toh main hi haar gaya.\"\n\nSaptarshi ne apne headset ko adjust karte hue jawab diya, \"Chal thik hai, kal subah tapri wali chai teri taraf se, bas aaj game mat delete karna.\"\n\nRGB lights ki wohi blue aur red roshni abhi bhi unke kamron mein chamak rahi thi, aur adhi raat ke is sannate mein dosti ka yeh silsila bina kisi interruption ke agle match ki loading screen ki taraf badh chuka tha.\n\nLoading screen ke gayab hote hi lobby ke naye match ki aawaz goonj uthi, par is baar dono doston ke beech ka virtual fasla jaise pal bhar ke liye gayab ho gaya kyunki unke agle kadam ne unhe screen ke aar-paar aamne-samne la khada kiya tha. Sougat ne apne headpiece mic ko thoda aur theek kiya, apni chair ko desk ke thoda aur kareeb kheencha, aur computer screen ke 24-inch glass ke doosri taraf baithe Saptarshi ki virtual aankhon mein dekhte hue ek baar phir challenge feka. \n\n\"Ruk Saptarshi, abhi screen ke is paar aur tere 90 FPS ke uss paar ka hisaab barabar karte hain,\" Sougat ne muskurate hue kaha, jabki blue aur red RGB lights ka noor unke chehron par ek alag hi rang bikher raha tha. \n\nSaptarshi ne apne headset ko ek taraf sirkaate hue screen ke samne se halka sa leaning posture banaya, maano woh sach mein Sougat ki aankhon mein dekh raha ho. \"Bhai, pehle apni coding aur reflexes theek kar le, warna agla match bhi wahi 'Defeat' wale red board par khatam hoga aur chai ki treat toh waise bhi teri hi jeb se jaani hai!\" \n\nAdhi raat ke uss sannate mein, game ki digital duniyan aur haqeeqat ke beech ka woh pal ek aisi hansi mein doob gaya, jahan haar aur jeet se kahin zyada gehra unka yeh 2026 ka unmatchable bromance chamak raha tha.\n\nLoading screen ke gayab hote hi lobby ke naye match ki aawaz goonj uthi, par is baar unke samne koi random bots nahi, balki do aise naye khiladi the jinhone poori lobby ka mood hi badal diya tha—Soumik aur Sagnik. \n\nSougat ne screen par unke usernames dekhte hi apne headpiece mic ko thoda aur theek kiya, apni chair ko desk ke thoda aur kareeb kheencha. \"Arre dekh, yeh Soumik aur Sagnik kaun naye nishanebaaz aa gaye hain match mein? Lagta hai aaj inhi se muqabla hai.\"\n\nSaptarshi ne apne 90 FPS rig par mouse glide karte hue screen ke samne se halka sa leaning posture banaya. \"Bhai, Soumik aur Sagnik toh wahi hain jo pichle tournament mein bhi gandi tarah haar kar gaye the. Inhe kya pata ki humare samne tikna kitna mushkil hai!\"\n\nDusri taraf se, match ke chat box aur voice channel mein Soumik aur Sagnik ki awazein gunj uthi. Soumik ne haste hue mic par kaha, \"Oye Sougat aur Saptarshi! Bahut bade pro ban rahe ho na? Aaj tum dono ko aisa dhul chataenge ki game delete karne ki zaroorat hi nahi padegi, seedha PC hi bechna padega!\"\n\nSagnik ne turant uski haan mein haan milate hue apna character aage badhaya. \"Sahi bola Soumik! Inka 90 FPS aur coding ka ghamand aaj yeh Soumik aur Sagnik mil kar todne wale hain. Tayyar ho jao haar ke liye, Sougat bhai!\"\n\nSougat ke hontho par ek confident muskurahat ubhri. Usne blue aur red RGB lights ke beech apne mouse par grip mazboot ki aur bol pada, \"Accha ji? Soumik aur Sagnik bhai, pehle ye toh dekh lo ki tumhara spawn point kahan hai, warna shuru hote hi wapas lobby mein jana padega!\"\n\nSaptarshi ne bhi apne character ko cover dete hue wahi purana dosto wala mazak dohraya, \"Sahi kaha Sougat! In dono ko toh aaj aisi class denge ki Soumik aur Sagnik poori zindagi tactical shooter khelna bhool jayenge.\"\n\nAdhi raat ke uss sannate mein, game ki digital duniyan aur haqeeqat ke beech ka woh pal ek aisi hansi aur mukable mein doob gaya, jahan Sougat aur Saptarshi ka samna ab Soumik aur Sagnik ke sath ek romanchak aur mazedaar match mein ho chuka tha.\n\n\n\n\n\n\nRound ki count-down khatam hote hi gate khul gaye, aur Sougat ne bina ek pal gavaye apne character ko sidha tactical corridor ki taraf dauda diya. \n\n\"Dekh Saptarshi, is baar main seedha aage ja raha hoon, tu flank kar!\" Sougat ne mic par thode josh aur thodi ghabrahat ke sath kaha. \n\nScreen ke doosri taraf se Saptarshi ki aawaz aayi, jo apne 90 FPS PC par poori focus ke sath mouse chala raha tha. \"Bhai, thoda dheere chal, wahan aage Soumik aur Sagnik pehle se hi position leke baithe honge. Tu apne character ko firse kisi deewar mein mat ghusa dena!\"\n\n\"Arre nahi bhai, aaj mera aim ekdum sniper jaisa hai!\" Sougat ne confidence dikhate hue aage badhne ki koshish ki, par tabhi screen ke dusre kone se Soumik ka character achanak samne aa gaya aur usne dharadhar goliyan chalani shuru kar diyan. \n\nVoice channel mein Soumik ki hansi goonji, \"Kya hua Sougat bhai? Kahan gaya tera sniper jaisa aim? Idhar dekh, Soumik tere saare confidence ki hawa nikaal raha hai!\"\n\nSagnik ne bhi turant apna character aage badhate hue mazaakiya andaz mein chidhaaya, \"Sahi pakda Soumik! Isko batao ki 2026 mein noob play kaise hota hai. Sagnik aur Soumik ki jodi se bachke rehna itna aasan nahi hai, Saptarshi bhai!\"\n\nSougat panic mein keyboard par galat keys dabane laga. \"Arre yaar, ye Soumik achanak kahan se tapak pada! Saptarshi, bacha le warna aaj firse tea treat ki naubat aa jayegi!\"\n\nSaptarshi ne bina waqt gavaye apne character ko ekdum smooth speed se enemy ke line of fire ke beech utaar diya aur Sagnik par ek perfect burst fire karke usko wahi dher kar diya. \"Bhai, tu sach mein ek number ka drama queen hai! Sagnik ko toh maine gira diya, par abhi Soumik baaki hai.\"\n\nScreen par Sagnik ke character ko girta dekh Soumik ki aawaz thodi dheemi padi, \"Arre Sagnik bhai ko kaise gira diya! Ruko Saptarshi, ab main batata hoon.\"\n\nSougat ne sans rokte hue apni thandi ho chuki chai ke cup ko chhua aur wapas mouse par haath rakh diya. RGB lights ki neeli aur laal roshni unke kamron mein abhi bhi chamak rahi thi, aur adhi raat ke is mukable mein dosti, hansi aur game ka yeh rangin safar aur bhi romanchak ho chuka tha.",
+      "summary": "Introducing Arthur, an endearingly clumsy gamer who treats real life with the same bewildered logic as a 1990s RPG tutorial.",
+      "status": "draft",
+      "id": "chap_1cc2c532c9",
+      "word_count": 1945,
+      "updated_at": "2026-11-14T09:00:20.135039"
+    },
+    "chap_de1d49472c": {
+      "story_id": "story_0080debe78",
+      "chapter_number": 2,
+      "title": "Chapter 2 - The Unfolding Incident",
+      "content": "",
+      "summary": "",
+      "status": "draft",
+      "id": "chap_de1d49472c",
+      "word_count": 0,
+      "updated_at": "2026-11-14T09:41:19.361607"
+    }
+  },
+  "characters": {
+    "char_silas_vance": {
+      "id": "char_silas_vance",
+      "story_id": "story_ravenscar_noir",
+      "name": "Silas Vance",
+      "alias": "The Harbor Hound",
+      "age": "38",
+      "role": "Protagonist",
+      "personality_traits": [
+        "Methodical",
+        "Hyper-observant",
+        "Cynical",
+        "Quietly Compassionate"
+      ],
+      "backstory": "Former naval surgeon turned private inquiry agent after an incident during the Crimean expedition. Settled in Ravenscar seven years ago, specializing in maritime insurance fraud.",
+      "physical_description": "Tall, lean frame with broad shoulders; silvering dark hair, keen gray eyes, and a faint scar along his left jawline. Always wears an oilskin overcoat.",
+      "relationships": [
+        {
+          "character_name": "Clara Moreau",
+          "relation_type": "Trusted Ally & Confidante",
+          "notes": "Relies on her historical knowledge; unexpressed mutual affection."
+        },
+        {
+          "character_name": "Lord Alistair Blackwood",
+          "relation_type": "Adversary / Suspect",
+          "notes": "Suspects Alistair is orchestrating his sisters disappearance."
+        },
+        {
+          "character_name": "Lady Evelyn Blackwood",
+          "relation_type": "Client / Missing Person",
+          "notes": "Sent the pocket watch before vanishing."
+        }
+      ],
+      "motivations": "Uncover the truth behind the Blackwood familys dark maritime pact before innocent dockworkers perish.",
+      "goals": "Locate Lady Evelyn alive and decode the obsidian key.",
+      "fears": "Drowning in enclosed underground water; repeating the medical catastrophe of his naval past.",
+      "secrets": "Possesses a second matching watch given to him by an unknown officer during the Crimean war.",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Chapter 3",
+      "portrait_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
+      "gender": "Male",
+      "character_arc": "Begins as a detached, cynical investigator haunted by a past naval catastrophe; progressively embraces personal vulnerability and risks everything to protect the truth and innocent lives.",
+      "updated_at": "2026-11-14T09:29:46.242043"
+    },
+    "char_clara_moreau": {
+      "id": "char_clara_moreau",
+      "story_id": "story_ravenscar_noir",
+      "name": "Clara Moreau",
+      "alias": "The Keeper of Ravenscar",
+      "age": "32",
+      "role": "Companion / Mentor",
+      "personality_traits": [
+        "Scholarly",
+        "Perceptive",
+        "Cautious",
+        "Resilient"
+      ],
+      "backstory": "Daughter of a French cartographer who died mysteriously during the harbor surveys. Took over the municipal archive ten years ago.",
+      "physical_description": "Dark auburn hair pinned into a practical chignon, round brass spectacles, ink-stained fingers, wears high-collared tweed waistcoats.",
+      "relationships": [
+        {
+          "character_name": "Silas Vance",
+          "relation_type": "Partner in Investigation",
+          "notes": "Deep intellectual bond and mutual protective instinct."
+        },
+        {
+          "character_name": "Lady Evelyn Blackwood",
+          "relation_type": "Childhood Friend",
+          "notes": "Shared clandestine correspondence regarding occult cartography."
+        }
+      ],
+      "motivations": "Vindicate her fathers discredited maritime theories and save Evelyn.",
+      "goals": "Translate the complete Order of the Iron Tide codex.",
+      "fears": "The destruction of historical truth; fire in the archive.",
+      "secrets": "Stole an original harbor survey ledger from the town hall vaults five years ago.",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 3",
+      "last_appearance": "Chapter 3",
+      "portrait_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop",
+      "gender": "Female",
+      "character_arc": "Evolves from a quiet archival scholar into a decisive field ally, using forbidden historical secrets to stand against powerful conspirators.",
+      "updated_at": "2026-11-14T09:29:45.474492"
+    },
+    "char_alistair_blackwood": {
+      "id": "char_alistair_blackwood",
+      "story_id": "story_ravenscar_noir",
+      "name": "Lord Alistair Blackwood",
+      "alias": "The Gilded Raven",
+      "age": "45",
+      "role": "Antagonist",
+      "personality_traits": [
+        "Arrogant",
+        "Superstitious",
+        "Secretly Terrified",
+        "Manipulative"
+      ],
+      "backstory": "Current head of the Blackwood merchant dynasty. Succeeded his father three years ago under ambiguous circumstances.",
+      "physical_description": "Impeccably tailored morning coat, pale gaunt face, thinning blond hair, manicured mustache, nervous twitch in right hand.",
+      "relationships": [
+        {
+          "character_name": "Lady Evelyn Blackwood",
+          "relation_type": "Estranged Sister",
+          "notes": "Views her as a dangerous threat to the familys financial empire."
+        },
+        {
+          "character_name": "Silas Vance",
+          "relation_type": "Intimidator",
+          "notes": "Attempting to bribe and subtly threaten Silas off the investigation."
+        }
+      ],
+      "motivations": "Maintain the Blackwood estates solvency by fulfilling the ancestral blood covenant before the winter solstice.",
+      "goals": "Recover the obsidian key and seal the sea cavern.",
+      "fears": "Public ruin and whatever entity resides beneath the north breakwater.",
+      "secrets": "Drugged Evelyn on the night of her disappearance, though she subsequently escaped.",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 2",
+      "last_appearance": "Chapter 2",
+      "portrait_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop",
+      "gender": "Male",
+      "character_arc": "Transitions from an arrogant aristocrat in control to an increasingly desperate puppet trapped by ancestral debts and existential terror.",
+      "updated_at": "2026-11-14T09:29:45.009737"
+    },
+    "char_evelyn_blackwood": {
+      "id": "char_evelyn_blackwood",
+      "story_id": "story_ravenscar_noir",
+      "name": "Lady Evelyn Blackwood",
+      "alias": "The Veiled Siren",
+      "age": "28",
+      "role": "Foil / Mystery Inciter",
+      "personality_traits": [
+        "Courageous",
+        "Deceptive",
+        "Resourceful",
+        "Haunted"
+      ],
+      "backstory": "Educated abroad in botanical sciences. Discovered the occult ledgers locked in her late fathers safe upon returning to Ravenscar.",
+      "physical_description": "Raven hair, striking violet eyes, pale aristocratic complexion; left behind a torn silk emerald gown in her bedroom.",
+      "relationships": [
+        {
+          "character_name": "Silas Vance",
+          "relation_type": "Selected Savior",
+          "notes": "Specifically targeted Silas because of his spotless reputation."
+        },
+        {
+          "character_name": "Clara Moreau",
+          "relation_type": "Lifelong Ally",
+          "notes": "Left hidden clues Clara alone could decipher."
+        }
+      ],
+      "motivations": "Break the Blackwood curse and prevent the bell in the deep from chiming.",
+      "goals": "Reach the subterranean sea chamber ahead of her brothers mercenaries.",
+      "fears": "Succumbing to the hereditary madness of her family.",
+      "secrets": "Is currently hiding in the abandoned salt cellar beneath the old smugglers pier.",
+      "current_status": "Missing",
+      "first_appearance": "Referenced in Chapter 1",
+      "last_appearance": "Chapter 2 (Evidence)",
+      "portrait_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop",
+      "gender": "Female",
+      "character_arc": "Shifts from a presumed helpless missing victim to the mastermind and catalyst of the resistance against the maritime occult order.",
+      "updated_at": "2026-11-14T09:29:45.245309"
+    },
+    "char_7eb057faf2": {
+      "story_id": "story_27abba9759",
+      "name": "Julian Calder",
+      "alias": "The Shadow Ledger",
+      "age": "36",
+      "role": "Protagonist",
+      "personality_traits": [
+        "Methodical",
+        "Unsentimental",
+        "Steadfast",
+        "Cautious"
+      ],
+      "backstory": "Former forensic accountant for the maritime commission who uncovered systematic smuggling along the northern straits.",
+      "physical_description": "Sharp hawk-like features, steel-framed spectacles, wears charcoal wool overcoats with reinforced inner pockets.",
+      "relationships": [],
+      "motivations": "Expose the high-ranking syndicate responsible for his partner's suspicious death.",
+      "goals": "Recover the missing double-entry manifests before the audit committee convenes.",
+      "fears": "Being framed for the embezzlement he spent three years documenting.",
+      "secrets": "Retains the private telegraph key capable of intercepting port communications.",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Current",
+      "portrait_url": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=600&auto=format&fit=crop",
+      "id": "char_7eb057faf2",
+      "updated_at": "2026-11-12T14:07:31.734375",
+      "gender": "Male",
+      "character_arc": "Determined to uncover the secrets buried within the estate before his own family's ties to the founders are exposed."
+    },
+    "char_2bbd62ef33": {
+      "story_id": "story_d9853fa35d",
+      "name": "Julian Vance",
+      "alias": "",
+      "age": "",
+      "gender": "",
+      "role": "Investigator",
+      "personality_traits": [
+        "Methodical",
+        "Cynical"
+      ],
+      "backstory": "",
+      "physical_description": "",
+      "relationships": [],
+      "motivations": "",
+      "goals": "",
+      "fears": "",
+      "secrets": "",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Chapter 1",
+      "portrait_url": null,
+      "character_arc": "",
+      "id": "char_2bbd62ef33",
+      "updated_at": "2026-11-13T13:05:53.256180"
+    },
+    "char_16889107fb": {
+      "story_id": "story_e600e0b6d5",
+      "name": "Julian Calder",
+      "alias": "The Shadow Ledger",
+      "age": "36",
+      "gender": "",
+      "role": "Protagonist",
+      "personality_traits": [
+        "Methodical",
+        "Unsentimental",
+        "Steadfast",
+        "Cautious",
+        "Determined",
+        "Observant",
+        "Guarded",
+        "Vigilant",
+        "Pragmatic",
+        "Resolute",
+        "Stoic",
+        "Stubborn",
+        "Brooding",
+        "Sentimental",
+        "Reserved",
+        "Frozen",
+        "Grief-stricken",
+        "Relentless",
+        "Detached"
+      ],
+      "backstory": "Former forensic accountant for the maritime commission who uncovered systematic smuggling along the northern straits.",
+      "physical_description": "Sharp hawk-like features, steel-framed spectacles, wears charcoal wool overcoats with reinforced inner pockets.",
+      "relationships": [],
+      "motivations": "Expose the high-ranking syndicate responsible for his partner's suspicious death.",
+      "goals": "",
+      "fears": "Being framed for the embezzlement he spent three years documenting.",
+      "secrets": "Retains the private telegraph key capable of intercepting port communications.",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Chapter 3",
+      "portrait_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
+      "character_arc": "",
+      "id": "char_16889107fb",
+      "updated_at": "2026-11-14T09:21:36.081792",
+      "aliases": [
+        "Julian",
+        "Calder",
+        "Mr. Calder",
+        "The Shadow Ledger"
+      ],
+      "status_history": [
+        {
+          "status": "Alive",
+          "chapter": 1,
+          "evidence": "The story of the last man story commences in howrah  during 2150.He has a friend saptarshi whom he loved very much.\n\n\n\nThe charcoal wool of his overcoat grew heavy with the radioactive mist that clung to the skeletal remains of the Howrah grand termi",
+          "type": "explicit"
+        }
+      ]
+    },
+    "char_0ed2388e15": {
+      "id": "char_0ed2388e15",
+      "story_id": "story_e600e0b6d5",
+      "name": "Saptarshi",
+      "alias": "",
+      "age": "",
+      "role": "Supporting Character",
+      "personality_traits": [
+        "Determined",
+        "Observant",
+        "Guarded",
+        "Resourceful",
+        "Impatient"
+      ],
+      "physical_description": "Encountered in Adventure manuscript.",
+      "backstory": "Extracted from manuscript scene.",
+      "motivations": "Navigating the events of the chapter.",
+      "goals": "Survive and uncover the truth.",
+      "fears": "",
+      "secrets": "",
+      "current_status": "Deceased",
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Chapter 3",
+      "relationships": [],
+      "updated_at": "2026-11-14T09:21:36.123832",
+      "aliases": [
+        "The boy"
+      ],
+      "status_history": [
+        {
+          "status": "Deceased",
+          "chapter": 1,
+          "evidence": "The story of the last man story commences in howrah  during 2150.He has a friend saptarshi whom he loved very much.\n\n\n\nThe charcoal wool of his overcoat grew heavy with the radioactive mist that clung to the skeletal remains of the Howrah grand termi",
+          "type": "explicit"
+        }
+      ]
+    },
+    "char_3a6d55ca16": {
+      "story_id": "story_e600e0b6d5",
+      "name": "soumik",
+      "alias": "mf",
+      "age": "",
+      "gender": "",
+      "role": "Protagonist",
+      "personality_traits": [
+        "fucker",
+        "Feral",
+        "Cold",
+        "Lethal",
+        "Authoritative",
+        "Pragmatic",
+        "Resilient",
+        "Action-oriented",
+        "Impatient",
+        "Physical",
+        "Direct"
+      ],
+      "backstory": "fucks everybody",
+      "physical_description": "gay",
+      "relationships": [],
+      "motivations": "",
+      "goals": "",
+      "fears": "",
+      "secrets": "",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Chapter 3",
+      "portrait_url": "",
+      "character_arc": "",
+      "id": "char_3a6d55ca16",
+      "updated_at": "2026-11-14T09:21:36.143874",
+      "aliases": [],
+      "status_history": [
+        {
+          "status": "Alive",
+          "chapter": 1,
+          "evidence": "The story of the last man story commences in howrah  during 2150.He has a friend saptarshi whom he loved very much.\n\n\n\nThe charcoal wool of his overcoat grew heavy with the radioactive mist that clung to the skeletal remains of the Howrah grand termi",
+          "type": "explicit"
+        }
+      ]
+    },
+    "char_640e2ec8a1": {
+      "id": "char_640e2ec8a1",
+      "story_id": "story_e600e0b6d5",
+      "name": "Lullu Dickwala",
+      "alias": "",
+      "age": "",
+      "role": "Supporting",
+      "personality_traits": [
+        "Pragmatic",
+        "Observant",
+        "Direct",
+        "Methodical",
+        "Gritty",
+        "Determined",
+        "Guarded",
+        "Deliberate",
+        "Vigilant",
+        "Unblinking",
+        "Gravelly",
+        "Cynical",
+        "Weary",
+        "Resolute",
+        "Grape-voiced",
+        "Lax",
+        "Morbid",
+        "Elderly"
+      ],
+      "physical_description": "Has a yellowed, amber-resin eye; leans upon a brass-shod walking staff; smells of fermented palm-sap and old coal.",
+      "backstory": "Companion to Julian in the desolate Howrah grand terminus, keeping track of time with a copper chronometer.",
+      "motivations": "To ensure the practical needs of survival are met, such as feeding the coal-stoves.",
+      "goals": "",
+      "fears": "",
+      "secrets": "",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 2",
+      "last_appearance": "Chapter 3",
+      "relationships": [],
+      "updated_at": "2026-11-14T09:21:36.066142",
+      "aliases": [
+        "Lullu",
+        "The newcomer",
+        "Dickwala"
+      ],
+      "status_history": [
+        {
+          "status": "Alive",
+          "chapter": 1,
+          "evidence": "The story of the last man story commences in howrah  during 2150.He has a friend saptarshi whom he loved very much.\n\n\n\nThe charcoal wool of his overcoat grew heavy with the radioactive mist that clung to the skeletal remains of the Howrah grand termi",
+          "type": "explicit"
+        }
+      ]
+    },
+    "char_17b7f7b8e4": {
+      "id": "char_17b7f7b8e4",
+      "story_id": "story_e600e0b6d5",
+      "name": "Saikat Bhosdiwala",
+      "alias": "",
+      "age": "",
+      "role": "Supporting",
+      "personality_traits": [
+        "Abrasive",
+        "Unyielding",
+        "Volatile",
+        "Determined",
+        "Observant",
+        "Guarded"
+      ],
+      "physical_description": "Broad shoulders, wears a tattered salt-crusted oilskin coat smelling of stagnant river-mud and cheap gunpowder.",
+      "backstory": "Has a volatile relationship and old territorial disputes over coal-stoves with Soumik.",
+      "motivations": "Navigating the dying world and maintaining his territory among the remaining survivors.",
+      "goals": "",
+      "fears": "",
+      "secrets": "",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 2",
+      "last_appearance": "Chapter 2",
+      "relationships": [],
+      "updated_at": "2026-11-14T09:21:36.054195",
+      "aliases": [
+        "Bhosdiwala"
+      ]
+    },
+    "char_77185a9f93": {
+      "id": "char_77185a9f93",
+      "story_id": "story_0080debe78",
+      "name": "Saptarshi",
+      "alias": "",
+      "age": "",
+      "role": "Ally",
+      "personality_traits": [
+        "Playful",
+        "Skilled",
+        "Competitive",
+        "Supportive",
+        "Witty",
+        "Skilled at gaming",
+        "Teasing",
+        "Passionate",
+        "Impulsive",
+        "Self-deprecating",
+        "Gamer",
+        "Prone to panic",
+        "Skillful",
+        "Calm under pressure",
+        "Hungry",
+        "Skilful",
+        "Humorous"
+      ],
+      "physical_description": "Adjusting his headset while stretching on his chair; owns a 90 FPS PC.",
+      "backstory": "A gaming friend and teammate in the 2026 multiplayer tactical shooter.",
+      "motivations": "To rank push, tease Sougat, and win the game together.",
+      "goals": "",
+      "fears": "",
+      "secrets": "",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Chapter 1",
+      "relationships": [],
+      "updated_at": "2026-11-14T09:43:15.165644",
+      "aliases": [
+        "Saptarshi bhai",
+        "bhai",
+        "Sougat",
+        "Sougat bhai",
+        "tu",
+        "tera bhai"
+      ],
+      "status_history": [
+        {
+          "status": "Alive",
+          "chapter": 1,
+          "evidence": "Sougat apne room ke andheray mein, sirf RGB keyboard ki blue aur red glow ke sahare, monitor screen ke samne baitha tha. Ek haath mein mouse aur dusre se chipka hua chai ka cup, jo abhi tak thanda bhi nahi hua tha. \n\n\"Bhai, ye match firse haar gaye t",
+          "type": "explicit"
+        }
+      ]
+    },
+    "char_66fe5e47e4": {
+      "id": "char_66fe5e47e4",
+      "story_id": "story_e600e0b6d5",
+      "name": "Sagnik",
+      "alias": "",
+      "aliases": [],
+      "age": "",
+      "role": "Supporting",
+      "personality_traits": [
+        "Theatrical",
+        "Catty",
+        "Dramatic",
+        "Vain",
+        "Arrogant",
+        "Affectionate"
+      ],
+      "physical_description": "Draped in a remarkably well-preserved crimson velvet overcoat, manicured and unblemished fingers, sharp and heavily lined eyes, smells of expensive pre-collapse French lavender.",
+      "backstory": "Arrived from the deeper shadows of the Howrah terminus into the sulfurous rot of 2150, displaying luxury amidst decay.",
+      "motivations": "To express adoration for Saptarshi and complain about the catastrophic atmosphere.",
+      "goals": "",
+      "fears": "",
+      "secrets": "",
+      "current_status": "Alive",
+      "status_history": [
+        {
+          "status": "Alive",
+          "chapter": 1,
+          "evidence": "Introduced in Chapter 1",
+          "type": "explicit"
+        }
+      ],
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Chapter 1",
+      "relationships": [],
+      "evidence": [
+        {
+          "chapter": 1,
+          "text": "The story of the last man story commences in howrah  during 2150.He has a friend saptarshi whom he loved very much.\n\n\n\nThe charcoal wool of his overcoat grew heavy with the radioactive mist that clung"
+        }
+      ],
+      "confidence": 1.0,
+      "updated_at": "2026-11-14T09:21:36.166902"
+    },
+    "char_4f9ac96c38": {
+      "id": "char_4f9ac96c38",
+      "story_id": "story_e600e0b6d5",
+      "name": "Mashir Chele",
+      "alias": "",
+      "aliases": [
+        "Mashir"
+      ],
+      "age": "",
+      "role": "Antagonist",
+      "personality_traits": [
+        "Grating",
+        "Greedy",
+        "Coarse",
+        "Impatient (implied by waiting)",
+        "Cynical",
+        "Pragmatic",
+        "Implied listener",
+        "Associated with Lullu",
+        "Target of conversation",
+        "Patient",
+        "Stationary",
+        "Brash"
+      ],
+      "physical_description": "Heavy frame, wide grease-stained face half-swathed in wet jute, small pig-like eyes, canvas apron, thick calloused fingers.",
+      "backstory": "Hauling copper scrap on the catwalk above, complained about unlatched hatches and rust, and plans to scavenge the dead.",
+      "motivations": "Scavenge resources (like the brass buttons off the red coat) and manage the salvage operation.",
+      "goals": "",
+      "fears": "",
+      "secrets": "",
+      "current_status": "Alive",
+      "status_history": [
+        {
+          "status": "Alive",
+          "chapter": 1,
+          "evidence": "Introduced in Chapter 1",
+          "type": "explicit"
+        }
+      ],
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Chapter 3",
+      "relationships": [],
+      "evidence": [
+        {
+          "chapter": 1,
+          "text": "The story of the last man story commences in howrah  during 2150.He has a friend saptarshi whom he loved very much.\n\n\n\nThe charcoal wool of his overcoat grew heavy with the radioactive mist that clung"
+        }
+      ],
+      "confidence": 1.0,
+      "updated_at": "2026-11-14T09:21:36.103192"
+    },
+    "char_26da1bb42e": {
+      "id": "char_26da1bb42e",
+      "story_id": "story_0080debe78",
+      "name": "Soumik",
+      "alias": "",
+      "age": "",
+      "role": "Antagonist",
+      "personality_traits": [
+        "Competitive",
+        "Playful",
+        "Confident",
+        "Teasing",
+        "Aggressive",
+        "Talkative",
+        "Vocal"
+      ],
+      "physical_description": "Not explicitly described.",
+      "backstory": "A new player joining the lobby who previously lost badly in a past tournament alongside Sagnik.",
+      "motivations": "To compete against Sougat and Saptarshi in the new match.",
+      "goals": "",
+      "fears": "",
+      "secrets": "",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Chapter 1",
+      "relationships": [],
+      "updated_at": "2026-11-14T09:43:15.305004",
+      "aliases": [
+        "Soumik bhai"
+      ],
+      "status_history": [
+        {
+          "status": "Alive",
+          "chapter": 1,
+          "evidence": "Sougat apne room ke andheray mein, sirf RGB keyboard ki blue aur red glow ke sahare, monitor screen ke samne baitha tha. Ek haath mein mouse aur dusre se chipka hua chai ka cup, jo abhi tak thanda bhi nahi hua tha. \n\n\"Bhai, ye match firse haar gaye t",
+          "type": "explicit"
+        }
+      ]
+    },
+    "char_ecd1277901": {
+      "id": "char_ecd1277901",
+      "story_id": "story_0080debe78",
+      "name": "Sagnik",
+      "alias": "",
+      "age": "",
+      "role": "Antagonist",
+      "personality_traits": [
+        "Competitive",
+        "Playful",
+        "Confident",
+        "Teasing",
+        "Supportive (of Soumik)",
+        "Supportive of Soumik"
+      ],
+      "physical_description": "Not explicitly described.",
+      "backstory": "A new player joining the lobby who previously participated and lost in the last tournament alongside Soumik.",
+      "motivations": "To compete against Sougat and Saptarshi in the new match.",
+      "goals": "",
+      "fears": "",
+      "secrets": "",
+      "current_status": "Alive",
+      "first_appearance": "Chapter 1",
+      "last_appearance": "Chapter 1",
+      "relationships": [],
+      "updated_at": "2026-11-14T09:43:15.428530",
+      "aliases": [
+        "Sagnik bhai"
+      ],
+      "status_history": [
+        {
+          "status": "Alive",
+          "chapter": 1,
+          "evidence": "Sougat apne room ke andheray mein, sirf RGB keyboard ki blue aur red glow ke sahare, monitor screen ke samne baitha tha. Ek haath mein mouse aur dusre se chipka hua chai ka cup, jo abhi tak thanda bhi nahi hua tha. \n\n\"Bhai, ye match firse haar gaye t",
+          "type": "explicit"
+        }
+      ]
+    }
+  },
+  "events": {
+    "evt_01": {
+      "id": "evt_01",
+      "story_id": "story_ravenscar_noir",
+      "event_number": 1,
+      "title": "Delivery of the Salt-Soaked Watch",
+      "description": "An unidentified harbor boy delivers a waterlogged package to Silas Vance inquiry office at 14 High Quay Street. The rear casing contains the cipher REVERIE.",
+      "illustration_url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Silas Vance"
+      ],
+      "location": "Silas Vance Office, 14 High Quay St",
+      "chapter_id": "chap_01",
+      "chapter_number": 1,
+      "chronological_position": 1.0,
+      "status": "Completed",
+      "consequences": [
+        "Silas takes up the investigation",
+        "The Blackwood crest is tied to the crime"
+      ],
+      "category": "discovery"
+    },
+    "evt_02": {
+      "id": "evt_02",
+      "story_id": "story_ravenscar_noir",
+      "event_number": 2,
+      "title": "Inspection of the Broken Bedroom",
+      "description": "Silas arrives at Blackwood Manor. Inside Lady Evelyn bedchamber, the French doors are shattered inward, and torn scraps of emerald silk are stuck on the iron balcony.",
+      "illustration_url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Silas Vance",
+        "Lord Alistair Blackwood"
+      ],
+      "location": "Blackwood Manor West Wing",
+      "chapter_id": "chap_02",
+      "chapter_number": 2,
+      "chronological_position": 2.0,
+      "status": "Completed",
+      "consequences": [
+        "Confirms Evelyn did not leave willingly",
+        "Disproves Alistair suicide claim"
+      ],
+      "category": "plot_turn"
+    },
+    "evt_03": {
+      "id": "evt_03",
+      "story_id": "story_ravenscar_noir",
+      "event_number": 3,
+      "title": "Alistairs Glass Spills",
+      "description": "During interrogation, Silas produces the pocket watch. Alistair experiences a visible panic attack and claims the key to that watch was buried with their father.",
+      "illustration_url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Silas Vance",
+        "Lord Alistair Blackwood"
+      ],
+      "location": "The Grand Conservatory, Blackwood Manor",
+      "chapter_id": "chap_02",
+      "chapter_number": 2,
+      "chronological_position": 3.0,
+      "status": "Completed",
+      "consequences": [
+        "Alistair is confirmed hiding crucial knowledge of the heirloom"
+      ],
+      "category": "conflict"
+    },
+    "evt_04": {
+      "id": "evt_04",
+      "story_id": "story_ravenscar_noir",
+      "event_number": 4,
+      "title": "Uncovering the Granite Breakwater Blueprint",
+      "description": "Clara Moreau pulls the 1842 harbor survey ledgers. Six hundred tons of stone were removed from the reef, constructing a hidden subterranean chamber under the sea bed.",
+      "illustration_url": "https://images.unsplash.com/photo-1461360370896-922624d12aa1?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Silas Vance",
+        "Clara Moreau"
+      ],
+      "location": "Ravenscar Municipal Archives",
+      "chapter_id": "chap_03",
+      "chapter_number": 3,
+      "chronological_position": 4.0,
+      "status": "Current",
+      "consequences": [
+        "Target coordinates established for the midnight expedition"
+      ],
+      "category": "revelation"
+    },
+    "evt_05": {
+      "id": "evt_05",
+      "story_id": "story_ravenscar_noir",
+      "event_number": 5,
+      "title": "The Decoded Iron Tide Codex",
+      "description": "Clara identifies the secret iron gall inscription as fourteenth-century maritime script describing The Obsidian Key capable of releasing the subterranean lock.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Clara Moreau"
+      ],
+      "location": "Municipal Archives",
+      "chapter_id": "chap_03",
+      "chapter_number": 3,
+      "chronological_position": 5.0,
+      "status": "Upcoming",
+      "consequences": [
+        "Warns of severe seismic repercussions if the vault is opened at low tide"
+      ],
+      "category": "revelation"
+    },
+    "evt_06": {
+      "id": "evt_06",
+      "story_id": "story_ravenscar_noir",
+      "event_number": 6,
+      "title": "Midnight Infiltration of the Smugglers Grotto",
+      "description": "Silas and Clara descend into the sea cave beneath the north lighthouse as the tide rises to their knees.",
+      "illustration_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Silas Vance",
+        "Clara Moreau"
+      ],
+      "location": "North Reef Sea Caverns",
+      "chapter_id": "chap_04",
+      "chapter_number": 4,
+      "chronological_position": 6.0,
+      "status": "Upcoming",
+      "consequences": [
+        "Direct encounter with Lord Alistairs armed henchmen"
+      ],
+      "category": "conflict"
+    },
+    "evt_07": {
+      "id": "evt_07",
+      "story_id": "story_ravenscar_noir",
+      "event_number": 7,
+      "title": "Confrontation at the Submerged Altar",
+      "description": "Evelyn is discovered barricaded inside the tidal chamber with the obsidian key in hand.",
+      "illustration_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Lady Evelyn Blackwood",
+        "Silas Vance",
+        "Lord Alistair Blackwood"
+      ],
+      "location": "The Submerged Sea Vault",
+      "chapter_id": "chap_05",
+      "chapter_number": 5,
+      "chronological_position": 7.0,
+      "status": "Locked",
+      "consequences": [
+        "The true nature of the family ancient bargain is laid bare"
+      ],
+      "category": "revelation"
+    },
+    "evt_4f4ba2632f": {
+      "id": "evt_4f4ba2632f",
+      "story_id": "story_27abba9759",
+      "event_number": 2,
+      "title": "Critical Discovery in Chapter 1",
+      "description": "Crucial evidence was uncovered, fundamentally shifting the investigative direction.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Protagonist"
+      ],
+      "location": "Primary Scene Location",
+      "chapter_id": "chap_ac5f38e697",
+      "chapter_number": 1,
+      "chronological_position": 1.0,
+      "status": "Current",
+      "consequences": [
+        "New investigative lead unlocked"
+      ],
+      "category": "discovery",
+      "updated_at": "2026-11-12T14:08:41.871173"
+    },
+    "evt_6a7c56007f": {
+      "id": "evt_6a7c56007f",
+      "story_id": "story_ravenscar_noir",
+      "event_number": 8,
+      "title": "Critical Discovery in Chapter 4",
+      "description": "Crucial evidence was uncovered, fundamentally shifting the investigative direction.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Protagonist"
+      ],
+      "location": "Primary Scene Location",
+      "chapter_id": "chap_0b1ba7a0eb",
+      "chapter_number": 4,
+      "chronological_position": 4.0,
+      "status": "Current",
+      "consequences": [
+        "New investigative lead unlocked"
+      ],
+      "category": "discovery",
+      "updated_at": "2026-11-13T13:25:31.318827"
+    },
+    "evt_3506150455": {
+      "id": "evt_3506150455",
+      "story_id": "story_e600e0b6d5",
+      "event_number": 1,
+      "title": "Decisive Turning Point in Chapter 2",
+      "description": "Crucial developments and revelations fundamentally advanced the narrative trajectory.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Central Characters"
+      ],
+      "location": "Primary Scene Location",
+      "chapter_id": "chap_c275be6118",
+      "chapter_number": 1,
+      "chronological_position": 2.0,
+      "status": "Current",
+      "consequences": [
+        "New narrative pathway unlocked"
+      ],
+      "category": "plot_turn",
+      "updated_at": "2026-11-13T14:18:11.513493"
+    },
+    "evt_f191dc2a87": {
+      "id": "evt_f191dc2a87",
+      "story_id": "story_0080debe78",
+      "event_number": 1,
+      "title": "Gaming Session and Banter",
+      "description": "Sougat is sitting in his dark room illuminated by RGB lighting, playing an online multiplayer tactical shooter game with his friend Saptarshi while drinking tea and bantering about their gaming skills and Sougat's threat to delete the game.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Sougat",
+        "Saptarshi"
+      ],
+      "location": "Sougat's room",
+      "chapter_id": "chap_1cc2c532c9",
+      "chapter_number": 1,
+      "chronological_position": 1.0,
+      "status": "Current",
+      "consequences": [
+        "Lightened the mood between the two friends",
+        "Strengthened their bond through playful insults"
+      ],
+      "category": "conflict",
+      "updated_at": "2026-11-13T18:19:28.183318"
+    },
+    "evt_49ee7c1854": {
+      "id": "evt_49ee7c1854",
+      "story_id": "story_0080debe78",
+      "event_number": 2,
+      "title": "Match Readiness and Tea Bet",
+      "description": "After a brief exchange where Saptarshi teases Sougat about his reflexes and coding, Sougat proposes a bet over the next match: if Saptarshi dies, he owes Sougat a tea treat.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Sougat",
+        "Saptarshi"
+      ],
+      "location": "Sougat's room (Virtual Lobby)",
+      "chapter_id": "chap_1cc2c532c9",
+      "chapter_number": 1,
+      "chronological_position": 1.2,
+      "status": "Current",
+      "consequences": [
+        "Saptarshi accepts the challenge",
+        "Both friends queue up for another round together"
+      ],
+      "category": "plot_turn",
+      "updated_at": "2026-11-13T18:19:28.203412"
+    },
+    "evt_8318e884b0": {
+      "id": "evt_8318e884b0",
+      "story_id": "story_0080debe78",
+      "event_number": 3,
+      "title": "Gaming Session and Banter",
+      "description": "Sougat is sitting in his dark room illuminated by RGB lighting, playing an online multiplayer tactical shooter game with his friend Saptarshi while drinking tea and discussing their gameplay flaws.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Sougat",
+        "Saptarshi"
+      ],
+      "location": "Sougat's room",
+      "chapter_id": "chap_1cc2c532c9",
+      "chapter_number": 1,
+      "chronological_position": 1.0,
+      "status": "Current",
+      "consequences": [
+        "They bond over lighthearted teasing about their gaming skills.",
+        "Sougat decides to play another round to redeem himself."
+      ],
+      "category": "conflict",
+      "updated_at": "2026-11-14T06:50:31.652507"
+    },
+    "evt_b49447dcd6": {
+      "id": "evt_b49447dcd6",
+      "story_id": "story_0080debe78",
+      "event_number": 4,
+      "title": "Challenging the Next Round",
+      "description": "Sougat makes a bet with Saptarshi regarding the next match—if they lose, Saptarshi has to treat Sougat to tea, though Sougat will end up eating it due to his endless appetite.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Sougat",
+        "Saptarshi"
+      ],
+      "location": "Sougat's room",
+      "chapter_id": "chap_1cc2c532c9",
+      "chapter_number": 1,
+      "chronological_position": 1.2,
+      "status": "Current",
+      "consequences": [
+        "A bet is established between the two friends.",
+        "Sougat strengthens his grip on the mouse and prepares to carry the team."
+      ],
+      "category": "plot_turn",
+      "updated_at": "2026-11-14T06:50:31.674108"
+    },
+    "evt_dbe1b52bdb": {
+      "id": "evt_dbe1b52bdb",
+      "story_id": "story_0080debe78",
+      "event_number": 5,
+      "title": "Entering the Lobby",
+      "description": "The lobby countdown finishes and both friends dive back into the digital battlefield together, prioritizing their friendship and laughter over winning or losing.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Sougat",
+        "Saptarshi"
+      ],
+      "location": "Virtual game world / Sougat's room",
+      "chapter_id": "chap_1cc2c532c9",
+      "chapter_number": 1,
+      "chronological_position": 1.4,
+      "status": "Current",
+      "consequences": [
+        "The gaming session continues with renewed energy and camaraderie."
+      ],
+      "category": "plot_turn",
+      "updated_at": "2026-11-14T06:50:31.691228"
+    },
+    "evt_7174f7330e": {
+      "id": "evt_7174f7330e",
+      "story_id": "story_0080debe78",
+      "event_number": 6,
+      "title": "Gaming Session and Banter",
+      "description": "Sougat is sitting in his dark room illuminated by RGB lighting, playing an online multiplayer tactical shooter game with his friend Saptarshi while drinking tea and discussing their gameplay flaws.",
+      "illustration_url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=600&auto=format&fit=crop",
+      "characters_involved": [
+        "Sougat",
+        "Saptarshi"
+      ],
+      "location": "Sougat's room",
+      "chapter_id": "chap_1cc2c532c9",
+      "chapter_number": 1,
+      "chronological_position": 1.0,
+      "status": "Current",
+      "consequences": [
+        "Lighthearted banter between the two friends about their gaming skills and reflex issues."
+      ],
+      "category": "conflict",
+      "updated_at": "2026-11-14T06:51:03.204814"
+    }
+  },
+  "memories": {
+    "mem_01": {
+      "id": "mem_01",
+      "story_id": "story_ravenscar_noir",
+      "title": "The Cipher Word REVERIE",
+      "description": "Engraved inside the balance cock of the salt-blackened pocket watch. Serves as the passphrase for the second lock in the Blackwood family reliquary.",
+      "category": "objects",
+      "source_chapter": "Chapter 1",
+      "related_character": "Silas Vance",
+      "related_location": "High Quay Street",
+      "importance": "High"
+    },
+    "mem_02": {
+      "id": "mem_02",
+      "story_id": "story_ravenscar_noir",
+      "title": "Stopped Time at 3:17",
+      "description": "The exact time the pocket watch was immersed in sea water. Matches the recorded peak of the spring low tide on October 14th.",
+      "category": "important_events",
+      "source_chapter": "Chapter 1",
+      "related_character": "Lady Evelyn Blackwood",
+      "related_location": "Ravenscar Bay",
+      "importance": "High"
+    },
+    "mem_03": {
+      "id": "mem_03",
+      "story_id": "story_ravenscar_noir",
+      "title": "The Three-Headed Raven Seal",
+      "description": "The hereditary wax seal of House Blackwood, dating back to 1680. Used only on matters of succession or secret family trusts.",
+      "category": "world_rules",
+      "source_chapter": "Chapter 1",
+      "related_character": "Lord Alistair Blackwood",
+      "related_location": "Blackwood Manor",
+      "importance": "Medium"
+    },
+    "mem_04": {
+      "id": "mem_04",
+      "story_id": "story_ravenscar_noir",
+      "title": "1842 Reef Excavation Secret",
+      "description": "Six hundred tons of granite were removed from the north breakwater under the guise of harbor repairs to carve out a submerged occult chamber.",
+      "category": "history",
+      "source_chapter": "Chapter 3",
+      "related_character": "Clara Moreau",
+      "related_location": "North Breakwater",
+      "importance": "High"
+    },
+    "mem_05": {
+      "id": "mem_05",
+      "story_id": "story_ravenscar_noir",
+      "title": "The Order of the Iron Tide",
+      "description": "A clandestine fraternity of Victorian industrialists and harbor masters who believe an ancient leviathan sleeps beneath the bay.",
+      "category": "world_rules",
+      "source_chapter": "Chapter 3",
+      "related_character": "Lord Alistair Blackwood",
+      "related_location": "Municipal Archives",
+      "importance": "High"
+    },
+    "mem_06": {
+      "id": "mem_06",
+      "story_id": "story_ravenscar_noir",
+      "title": "Alistairs Gold Signet Ring",
+      "description": "Carries an internal compartment containing cyanide or powdered belladonna. Alistair turns it when under severe interrogation stress.",
+      "category": "objects",
+      "source_chapter": "Chapter 2",
+      "related_character": "Lord Alistair Blackwood",
+      "related_location": "Conservatory",
+      "importance": "Medium"
+    },
+    "mem_07": {
+      "id": "mem_07",
+      "story_id": "story_ravenscar_noir",
+      "title": "Claras Stolen Harbor Ledger",
+      "description": "Clara holds an illegal copy of the original 1842 town surveyors journal, which her late father hid before his fatal boat accident.",
+      "category": "character_facts",
+      "source_chapter": "Chapter 3",
+      "related_character": "Clara Moreau",
+      "related_location": "Municipal Archives",
+      "importance": "High"
+    },
+    "mem_08": {
+      "id": "mem_08",
+      "story_id": "story_ravenscar_noir",
+      "title": "The Obsidian Key",
+      "description": "A non-metallic black stone key carved with spiraling tide markers. Opens the inner sanctum beneath the submerged altar.",
+      "category": "objects",
+      "source_chapter": "Chapter 3",
+      "related_character": "Lady Evelyn Blackwood",
+      "related_location": "Submerged Sea Vault",
+      "importance": "High"
+    }
+  },
+  "plotholes": {
+    "issue_01": {
+      "id": "issue_01",
+      "story_id": "story_ravenscar_noir",
+      "title": "Pocket Watch Key Contradiction",
+      "category": "object_continuity_error",
+      "severity": "Critical",
+      "description": "Contradiction regarding the custody and existence of the reliquary key for the Blackwood watch.",
+      "previous_conflicting_info": "Chapter 1: Silas effortlessly opens the watch outer casing with his thumbnail at his desk.",
+      "current_conflicting_info": "Chapter 2: Lord Alistair swears under oath that the watch cannot be opened without a key that was buried with his father.",
+      "source_chapters": [
+        "Chapter 1",
+        "Chapter 2"
+      ],
+      "suggested_correction": "Clarify that Silas only opened the outer watch casing, whereas the inner movement gear compartment requires the ancestral brass key.",
+      "status": "resolved",
+      "updated_at": "2026-11-13T13:23:11.712247"
+    },
+    "issue_02": {
+      "id": "issue_02",
+      "story_id": "story_ravenscar_noir",
+      "title": "Weather & Wave Height Inconsistency",
+      "category": "timeline_contradiction",
+      "severity": "Warning",
+      "description": "Tidal timing discrepancy between Silas leaving his office and arriving at the Manor.",
+      "previous_conflicting_info": "Chapter 1: Silas notes the gale is blowing inland at low tide (3:17 AM).",
+      "current_conflicting_info": "Chapter 2: Lord Alistair describes his sister leaving by rowboat at 3:30 AM into raging 15-foot breaker waves that would have smashed any boat against the reef.",
+      "source_chapters": [
+        "Chapter 1",
+        "Chapter 2"
+      ],
+      "suggested_correction": "Have Silas point out this exact physical impossibility to Alistair during the conservatory confrontation to catch him in a deliberate lie.",
+      "status": "resolved",
+      "updated_at": "2026-11-13T13:22:52.162355"
+    },
+    "issue_03": {
+      "id": "issue_03",
+      "story_id": "story_ravenscar_noir",
+      "title": "Lady Evelyn Dress Description",
+      "category": "character_inconsistency",
+      "severity": "Suggestion",
+      "description": "Discrepancy in the color and fabric of Evelyn abandoned clothing.",
+      "previous_conflicting_info": "Chapter 2: Silas discovers torn scraps of emerald silk caught on the balcony railing.",
+      "current_conflicting_info": "Chapter 3: Clara recalls Evelyn wearing a dark wool traveling cape and sturdy boots on the afternoon before her vanishing.",
+      "source_chapters": [
+        "Chapter 2",
+        "Chapter 3"
+      ],
+      "suggested_correction": "Add a line explaining that the emerald silk was a decoy planted in the bedroom to suggest an abduction from bed.",
+      "status": "resolved",
+      "updated_at": "2026-11-13T13:22:59.399809"
+    },
+    "issue_c18ad61ede": {
+      "id": "issue_c18ad61ede",
+      "story_id": "story_ravenscar_noir",
+      "title": "Automated Narrative Continuity Scan",
+      "category": "world_rule_violation",
+      "severity": "Suggestion",
+      "description": "Ensure the temporal progression between chapters 2 and 3 explicitly accounts for traveling distance across the headland.",
+      "previous_conflicting_info": "Chapter 2 notes the sun setting at 6:00 PM.",
+      "current_conflicting_info": "Chapter 3 depicts midday sun without an explicit passage of time marker.",
+      "source_chapters": [
+        "Chapter 2",
+        "Chapter 3"
+      ],
+      "suggested_correction": "Insert a transitional sentence: 'By the time the midday tide receded on the following morning...'",
+      "status": "open",
+      "updated_at": "2026-11-13T13:23:08.537549"
+    },
+    "issue_eb451efa99": {
+      "id": "issue_eb451efa99",
+      "story_id": "story_ravenscar_noir",
+      "title": "Automated Narrative Continuity Scan",
+      "category": "world_rule_violation",
+      "severity": "Suggestion",
+      "description": "Ensure the temporal progression between chapters 2 and 3 explicitly accounts for traveling distance across the headland.",
+      "previous_conflicting_info": "Chapter 2 notes the sun setting at 6:00 PM.",
+      "current_conflicting_info": "Chapter 3 depicts midday sun without an explicit passage of time marker.",
+      "source_chapters": [
+        "Chapter 2",
+        "Chapter 3"
+      ],
+      "suggested_correction": "Insert a transitional sentence: 'By the time the midday tide receded on the following morning...'",
+      "status": "open",
+      "updated_at": "2026-11-13T13:23:14.908576"
+    },
+    "issue_f857a8753b": {
+      "id": "issue_f857a8753b",
+      "story_id": "story_e600e0b6d5",
+      "title": "Incomplete Chapter Content",
+      "category": "world_rule_violation",
+      "severity": "Critical",
+      "description": "Chapter 2 ('The Unfolding Incident') is entirely blank, making it impossible to audit narrative continuity, plot progression, or character consistency following Chapter 1.",
+      "previous_conflicting_info": "Chapter 1 introduces an artifact arriving under cover of fog with ominous warnings.",
+      "current_conflicting_info": "Chapter 2 contains no text or events.",
+      "source_chapters": [
+        "Chapter 2 - The Unfolding Incident"
+      ],
+      "suggested_correction": "Draft the narrative content for Chapter 2 to establish how the characters react to the artifact introduced in Chapter 1.",
+      "status": "resolved",
+      "updated_at": "2026-11-13T14:40:08.422445"
+    },
+    "issue_22967038cf": {
+      "id": "issue_22967038cf",
+      "story_id": "story_e600e0b6d5",
+      "title": "Incomplete Chapter 2 Content",
+      "category": "character_inconsistency",
+      "severity": "Warning",
+      "description": "Chapter 2 ('The Unfolding Incident') is currently blank, leaving a narrative gap immediately following the arrival of the artifact in Chapter 1.",
+      "previous_conflicting_info": "Chapter 1 introduces an incoming artifact and ominous warnings under cover of fog.",
+      "current_conflicting_info": "Chapter 2 contains no text or events to follow up on the cliffhanger.",
+      "source_chapters": [
+        "Chapter 1",
+        "Chapter 2 - The Unfolding Incident"
+      ],
+      "suggested_correction": "Draft the events of Chapter 2 to establish how the characters react to the artifact introduced in Chapter 1.",
+      "status": "resolved",
+      "updated_at": "2026-11-13T14:40:11.857301"
+    }
+  },
+  "boards": {
+    "story_ravenscar_noir": {
+      "positions": {
+        "char_silas_vance": {
+          "x": 60,
+          "y": 60
+        },
+        "char_clara_moreau": {
+          "x": 502,
+          "y": 108
+        },
+        "char_alistair_blackwood": {
+          "x": 439,
+          "y": 352
+        },
+        "char_evelyn_blackwood": {
+          "x": 942,
+          "y": 111
+        }
+      },
+      "connections": [
+        {
+          "id": "conn_silas_clara",
+          "sourceId": "char_silas_vance",
+          "targetId": "char_clara_moreau",
+          "sourceName": "Silas Vance",
+          "targetName": "Clara Moreau",
+          "label": "Informant & Ally",
+          "type": "ally",
+          "direction": "bidirectional",
+          "notes": "Met during dockside investigation",
+          "source_chapter": "",
+          "evidence_quote": "",
+          "confidence": 1,
+          "verified": false
+        },
+        {
+          "id": "conn_silas_alistair",
+          "sourceId": "char_silas_vance",
+          "targetId": "char_alistair_blackwood",
+          "sourceName": "Silas Vance",
+          "targetName": "Lord Alistair Blackwood",
+          "label": "Primary Suspect",
+          "type": "enemy",
+          "direction": "bidirectional",
+          "notes": "Interrogated regarding the forged estate deed",
+          "source_chapter": "",
+          "evidence_quote": "",
+          "confidence": 1,
+          "verified": false
+        },
+        {
+          "id": "conn_alistair_evelyn",
+          "sourceId": "char_alistair_blackwood",
+          "targetId": "char_evelyn_blackwood",
+          "sourceName": "Lord Alistair Blackwood",
+          "targetName": "Lady Evelyn Blackwood",
+          "label": "Estranged Siblings",
+          "type": "family",
+          "direction": "bidirectional",
+          "notes": "Conflicting claims over Ravenscar inheritance",
+          "source_chapter": "",
+          "evidence_quote": "",
+          "confidence": 1,
+          "verified": false
+        },
+        {
+          "id": "conn_auto_char_s_char_e_2",
+          "sourceId": "char_silas_vance",
+          "targetId": "char_evelyn_blackwood",
+          "sourceName": "Silas Vance",
+          "targetName": "Lady Evelyn Blackwood",
+          "label": "Mystery Inciter",
+          "type": "unknown",
+          "direction": "bidirectional",
+          "notes": "Silas investigates the missing lady's locked quarters associated with Evelyn Blackwood's mystery.",
+          "source_chapter": "",
+          "evidence_quote": "",
+          "confidence": 1,
+          "verified": false
+        }
+      ],
+      "story_id": "story_ravenscar_noir",
+      "updated_at": "2026-11-14T09:29:46.590121"
+    },
+    "story_e600e0b6d5": {
+      "positions": {
+        "char_16889107fb": {
+          "x": 10,
+          "y": 13
+        },
+        "char_0ed2388e15": {
+          "x": 415,
+          "y": 51
+        },
+        "char_640e2ec8a1": {
+          "x": 859,
+          "y": 271
+        },
+        "char_3a6d55ca16": {
+          "x": 10,
+          "y": 442
+        },
+        "char_17b7f7b8e4": {
+          "x": 40,
+          "y": 506
+        }
+      },
+      "connections": [
+        {
+          "id": "conn_auto_char_3_char_0_0",
+          "sourceId": "char_3a6d55ca16",
+          "targetId": "char_0ed2388e15",
+          "label": "Working Partners",
+          "type": "ally",
+          "notes": "Soumik is hauling Saptarshi's body/remains across the concourse floor together.",
+          "sourceName": "soumik",
+          "targetName": "Saptarshi"
+        },
+        {
+          "id": "conn_auto_char_3_char_1_1",
+          "sourceId": "char_3a6d55ca16",
+          "targetId": "char_16889107fb",
+          "label": "Tense Companions",
+          "type": "ally",
+          "notes": "Soumik speaks to Julian regarding the work while Julian remains silent, holding his telegraph key.",
+          "sourceName": "soumik",
+          "targetName": "Julian Calder"
+        },
+        {
+          "id": "conn_auto_char_6_char_3_2",
+          "sourceId": "char_640e2ec8a1",
+          "targetId": "char_3a6d55ca16",
+          "label": "Observant Watcher",
+          "type": "ally",
+          "notes": "Lullu Dickwala watches Soumik and Julian from the shadow of a pillar.",
+          "sourceName": "Lullu Dickwala",
+          "targetName": "soumik"
+        },
+        {
+          "id": "conn_auto_char_1_char_0_0",
+          "sourceId": "char_16889107fb",
+          "targetId": "char_0ed2388e15",
+          "sourceName": "Julian Calder",
+          "targetName": "Saptarshi",
+          "label": "Deeply Loved Friend / Resurrected Companion",
+          "type": "friends",
+          "direction": "bidirectional",
+          "notes": "Julian initially believes Saptarshi is dead and mourns him deeply, tracing his nameplate and remembering their shared past, before Saptarshi reappears alive.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "He knelt beside a rusted luggage trolley, his gloved fingers tracing the frost-rimed nameplate of his departed friend. Saptarshi.",
+          "confidence": 1.0,
+          "verified": true
+        },
+        {
+          "id": "conn_auto_char_0_char_1_1",
+          "sourceId": "char_0ed2388e15",
+          "targetId": "char_17b7f7b8e4",
+          "sourceName": "Saptarshi",
+          "targetName": "Saikat Bhosdiwala",
+          "label": "Romantic Partners / Devoted Lovers",
+          "type": "romance",
+          "direction": "bidirectional",
+          "notes": "Sagnik displays intense, unbridled adoration and possessive affection for Saptarshi, calling him his 'darling' and reacting with anguish when Saptarshi is shot.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "He immediately threw his arms around Saptarshi’s neck, burying his face into the damp, salt-caked canvas of the survivor's shoulder with a theatrical, trembling sigh.",
+          "confidence": 1.0,
+          "verified": true
+        },
+        {
+          "id": "conn_auto_char_3_char_1_2",
+          "sourceId": "char_3a6d55ca16",
+          "targetId": "char_17b7f7b8e4",
+          "sourceName": "soumik",
+          "targetName": "Saikat Bhosdiwala",
+          "label": "Killer / Victim",
+          "type": "killer_victim",
+          "direction": "directional",
+          "notes": "Soumik shoots and kills Sagnik from the catwalk with a rifle.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "A sharp, deafening crack split the vaulted air... The crimson velvet of his overcoat blossomed into a dark, spreading stain across his chest... Sagnik collapsed into the oxidized brass filings...",
+          "confidence": 1.0,
+          "verified": true
+        },
+        {
+          "id": "conn_auto_char_3_char_0_3",
+          "sourceId": "char_3a6d55ca16",
+          "targetId": "char_0ed2388e15",
+          "sourceName": "soumik",
+          "targetName": "Saptarshi",
+          "label": "Shooter and Victim",
+          "type": "killer_victim",
+          "direction": "directional",
+          "notes": "Soumik shoots and kills Saptarshi with a second heavy-caliber round from the catwalk.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "Before Saptarshi could reach the fallen velvet heap, a second dry, concussive roar detonated from the catwalk... Saptarshi slammed backward against Column 42, his chest torn open...",
+          "confidence": 1.0,
+          "verified": true
+        },
+        {
+          "id": "conn_auto_char_6_char_1_4",
+          "sourceId": "char_640e2ec8a1",
+          "targetId": "char_16889107fb",
+          "sourceName": "Lullu Dickwala",
+          "targetName": "Julian Calder",
+          "label": "Uneasy Associates / Fellow Survivors",
+          "type": "allies",
+          "direction": "bidirectional",
+          "notes": "Lullu travels with the group and speaks familiarly to Julian about Saptarshi and the signals.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "'He talks too much, Calder,' Lullu rasped... 'You aren't the only one who refuses to let a good memory rot in the dirt, Julian.'",
+          "confidence": 1.0,
+          "verified": true
+        },
+        {
+          "id": "conn_auto_char_6_char_0_1",
+          "sourceId": "char_66fe5e47e4",
+          "targetId": "char_0ed2388e15",
+          "sourceName": "Sagnik",
+          "targetName": "Saptarshi",
+          "label": "Devoted Romantic Interest",
+          "type": "romance",
+          "direction": "bidirectional",
+          "notes": "Sagnik expresses intense, open romantic adoration and affection toward Saptarshi ('my poor, bruised darling', 'how desperately I adore you, Saptarshi'), which Saptarshi acknowledges with weary fondness.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "Let every rusting automaton in 2150 hear how desperately I adore you, Saptarshi",
+          "confidence": 1.0,
+          "verified": true
+        },
+        {
+          "id": "conn_auto_char_3_char_6_2",
+          "sourceId": "char_3a6d55ca16",
+          "targetId": "char_66fe5e47e4",
+          "sourceName": "soumik",
+          "targetName": "Sagnik",
+          "label": "Shooter and Victim",
+          "type": "killer_victim",
+          "direction": "directional",
+          "notes": "Soumik shoots and kills Sagnik from the catwalk with a rifle shot to the chest.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "A sharp, deafening crack split the vaulted air... The crimson velvet of his overcoat blossomed into a dark, spreading stain across his chest",
+          "confidence": 1.0,
+          "verified": true
+        },
+        {
+          "id": "conn_auto_char_3_char_4_allies",
+          "sourceId": "char_3a6d55ca16",
+          "targetId": "char_4f9ac96c38",
+          "sourceName": "soumik",
+          "targetName": "Mashir Chele",
+          "label": "Associates",
+          "type": "allies",
+          "direction": "bidirectional",
+          "notes": "Scavenger associates coordinating catwalk patrols and scavenging the railway terminus.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "You left the back hatch unlatched, Soumik, Mashir Chele muttered, hauling a dripping sack of copper scrap.",
+          "confidence": 1.0,
+          "verified": true
+        },
+        {
+          "id": "conn_auto_char_6_char_0_2",
+          "sourceId": "char_66fe5e47e4",
+          "targetId": "char_0ed2388e15",
+          "sourceName": "Sagnik",
+          "targetName": "Saptarshi",
+          "label": "Devoted Admirer / Object of Affection",
+          "type": "romance",
+          "direction": "directional",
+          "notes": "Sagnik displays intense, open adoration and romantic devotion toward Saptarshi, calling him 'my poor, bruised darling'.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "He immediately threw his arms around Saptarshi’s neck, burying his face into the damp, salt-caked canvas of the survivor's shoulder with a theatrical, trembling sigh.",
+          "confidence": 1.0,
+          "verified": true
+        },
+        {
+          "id": "conn_auto_char_4_char_6_2",
+          "sourceId": "char_4f9ac96c38",
+          "targetId": "char_66fe5e47e4",
+          "sourceName": "Mashir Chele",
+          "targetName": "Sagnik",
+          "label": "Killer and Victim",
+          "type": "killer_victim",
+          "direction": "directional",
+          "notes": "Soumik shoots and kills Sagnik from the catwalk with a rifle shot to the chest.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "Soumik’s voice dropped from the rafters... A sharp, deafening crack split the vaulted air. The crimson velvet of his overcoat blossomed into a dark, spreading stain across his chest",
+          "confidence": 1.0,
+          "verified": true
+        },
+        {
+          "id": "conn_auto_char_4_char_0_3",
+          "sourceId": "char_4f9ac96c38",
+          "targetId": "char_0ed2388e15",
+          "sourceName": "Mashir Chele",
+          "targetName": "Saptarshi",
+          "label": "Killer and Victim",
+          "type": "killer_victim",
+          "direction": "directional",
+          "notes": "Soumik fires a second rifle shot from the catwalk, fatally striking Saptarshi against Column 42.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "Before Saptarshi could reach the fallen velvet heap, a second dry, concussive roar detonated from the catwalk. The impact lifted Saptarshi off his boots.",
+          "confidence": 1.0,
+          "verified": true
+        }
+      ],
+      "story_id": "story_e600e0b6d5",
+      "updated_at": "2026-11-14T09:21:36.186450"
+    },
+    "story_0080debe78": {
+      "positions": {
+        "char_77185a9f93": {
+          "x": 40,
+          "y": 40
+        },
+        "char_26da1bb42e": {
+          "x": 254,
+          "y": 311
+        },
+        "char_ecd1277901": {
+          "x": 436,
+          "y": 40
+        }
+      },
+      "connections": [
+        {
+          "id": "conn_auto_char_7_char_2_0",
+          "sourceId": "char_77185a9f93",
+          "targetId": "char_26da1bb42e",
+          "sourceName": "Saptarshi",
+          "targetName": "Soumik",
+          "label": "Match Rivals",
+          "type": "rivals",
+          "direction": "bidirectional",
+          "notes": "Sougat and Saptarshi are facing off against Soumik and Sagnik in the multiplayer tactical shooter match.",
+          "source_chapter": "Chapter 1",
+          "evidence_quote": "Oye Sougat aur Saptarshi! Bahut bade pro ban rahe ho na? Aaj tum dono ko aisa dhul chataenge ki game delete karne ki zaroorat hi nahi padegi...",
+          "confidence": 1,
+          "verified": true
+        }
+      ],
+      "story_id": "story_0080debe78",
+      "updated_at": "2026-11-14T09:43:15.471237"
+    }
+  },
+  "culprits": {
+    "story_e600e0b6d5": {
+      "culprit_id": "char_7644ea4407",
+      "story_id": "story_e600e0b6d5",
+      "updated_at": "2026-11-13T14:09:07.746276"
+    }
+  }
+}
