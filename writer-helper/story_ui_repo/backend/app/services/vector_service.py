@@ -228,10 +228,11 @@ class VectorMemoryService:
         # 1. Primary: Query ChromaDB Persistent Vector Collection
         if self.has_chroma and self.collection and query_clean and story_id:
             try:
-                # If collection is currently empty for this story, sync chapters first
-                count = self.collection.count()
-                if count == 0 and chapters:
-                    self.sync_story_chapters(story_id, chapters)
+                # Ensure collection has indexed chapters for this story
+                if chapters:
+                    existing_story_items = self.collection.get(where={"story_id": story_id}, limit=1)
+                    if not existing_story_items or not existing_story_items.get("ids"):
+                        self.sync_story_chapters(story_id, chapters)
 
                 where_filter = {"story_id": story_id}
                 query_res = self.collection.query(

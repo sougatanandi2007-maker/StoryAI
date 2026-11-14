@@ -61,8 +61,16 @@ export const StoryProvider: React.FC<{ children: ReactNode }> = ({ children }) =
       setStories(data);
 
       if (data.length > 0) {
-        if (!activeStory || !data.some(s => s.id === activeStory.id)) {
+        const savedId = localStorage.getItem('storyweave_active_story_id');
+        const matchSaved = savedId ? data.find(s => s.id === savedId) : null;
+
+        if (matchSaved) {
+          setActiveStory(matchSaved);
+        } else if (!activeStory || !data.some(s => s.id === activeStory.id)) {
           setActiveStory(data[0]);
+          try {
+            localStorage.setItem('storyweave_active_story_id', data[0].id);
+          } catch {}
         } else {
           const updated = data.find(s => s.id === activeStory.id);
           if (updated) setActiveStory(updated);
@@ -85,6 +93,9 @@ export const StoryProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     const found = stories.find(s => s.id === id);
     if (found) {
       setActiveStory(found);
+      try {
+        localStorage.setItem('storyweave_active_story_id', id);
+      } catch {}
       sound.playPaperRustle();
     }
   };

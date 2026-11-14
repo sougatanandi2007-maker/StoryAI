@@ -7,7 +7,8 @@ from datetime import datetime
 
 from ..config import DATA_DIR, MONGODB_URI, MONGODB_DB_NAME
 
-lock = threading.Lock()
+# Use RLock (reentrant) so same thread can acquire multiple times without deadlocking
+lock = threading.RLock()
 
 class DatabaseService:
     def __init__(self):
